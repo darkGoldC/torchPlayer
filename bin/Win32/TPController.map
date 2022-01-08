@@ -1,0 +1,860 @@
+ TPController
+
+ Timestamp is 61d951fd (Sat Jan  8 16:57:33 2022)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000030H .text$di                CODE
+ 0001:00000030 000020a0H .text$mn                CODE
+ 0001:000020d0 000001e1H .text$x                 CODE
+ 0002:00000000 00000228H .idata$5                DATA
+ 0002:00000228 00000004H .00cfg                  DATA
+ 0002:0000022c 00000004H .CRT$XCA                DATA
+ 0002:00000230 0000000cH .CRT$XCU                DATA
+ 0002:0000023c 00000004H .CRT$XCZ                DATA
+ 0002:00000240 00000004H .CRT$XIA                DATA
+ 0002:00000244 00000004H .CRT$XIZ                DATA
+ 0002:00000248 00000004H .CRT$XPA                DATA
+ 0002:0000024c 00000004H .CRT$XPZ                DATA
+ 0002:00000250 00000004H .CRT$XTA                DATA
+ 0002:00000254 00000004H .CRT$XTZ                DATA
+ 0002:00000258 00000000H .gfids$y                DATA
+ 0002:00000258 00000728H .rdata                  DATA
+ 0002:00000980 00000000H .rdata$CastGuardVftablesA DATA
+ 0002:00000980 00000000H .rdata$CastGuardVftablesC DATA
+ 0002:00000980 000004b4H .rdata$r                DATA
+ 0002:00000e34 00000020H .rdata$sxdata           DATA
+ 0002:00000e54 00000028H .rdata$voltmd           DATA
+ 0002:00000e7c 00000308H .rdata$zzzdbg           DATA
+ 0002:00001184 00000004H .rtc$IAA                DATA
+ 0002:00001188 00000004H .rtc$IZZ                DATA
+ 0002:0000118c 00000004H .rtc$TAA                DATA
+ 0002:00001190 00000008H .rtc$TZZ                DATA
+ 0002:00001198 000002e8H .xdata$x                DATA
+ 0002:00001480 00000a6cH .edata                  DATA
+ 0002:00001eec 000000b4H .idata$2                DATA
+ 0002:00001fa0 00000014H .idata$3                DATA
+ 0002:00001fb4 00000228H .idata$4                DATA
+ 0002:000021dc 000014d8H .idata$6                DATA
+ 0003:00000000 0000015cH .data                   DATA
+ 0003:0000015c 00000080H .data$r                 DATA
+ 0003:000001dc 0000014cH .data$rs                DATA
+ 0003:00000328 00000374H .bss                    DATA
+ 0004:00000000 00000060H .rsrc$01                DATA
+ 0004:00000060 00000180H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___arm64x_extra_rfe_table  00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_table     00000000     <absolute>
+ 0000:00000000       ___hybrid_auxiliary_iat_copy 00000000     <absolute>
+ 0000:00000000       ___enclave_config          00000000     <absolute>
+ 0000:00000000       ___arm64x_extra_rfe_table_size 00000000     <absolute>
+ 0000:00000000       ___arm64x_native_entrypoint 00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
+ 0000:00000000       ___guard_fids_count        00000000     <absolute>
+ 0000:00000000       ___guard_eh_cont_count     00000000     <absolute>
+ 0000:00000000       ___guard_eh_cont_table     00000000     <absolute>
+ 0000:00000000       ___arm64x_redirection_metadata_count 00000000     <absolute>
+ 0000:00000000       ___guard_check_icall_a64n_fptr 00000000     <absolute>
+ 0000:00000000       ___hybrid_code_map         00000000     <absolute>
+ 0000:00000000       ___guard_iat_count         00000000     <absolute>
+ 0000:00000000       ___arm64x_redirection_metadata 00000000     <absolute>
+ 0000:00000000       ___hybrid_auxiliary_iat    00000000     <absolute>
+ 0000:00000000       ___dynamic_value_reloc_table 00000000     <absolute>
+ 0000:00000000       ___guard_iat_table         00000000     <absolute>
+ 0000:00000000       ___hybrid_code_map_count   00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_count     00000000     <absolute>
+ 0000:00000000       ___x64_code_ranges_to_entry_points_count 00000000     <absolute>
+ 0000:00000000       ___AbsoluteZero            00000000     <absolute>
+ 0000:00000000       ___x64_code_ranges_to_entry_points 00000000     <absolute>
+ 0000:00000008       ___safe_se_handler_count   00000008     <absolute>
+ 0000:00000100       ___guard_flags             00000100     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000030       ??0TPMainController@@QAE@PAVQObject@@@Z 10001030 f   TPMainController.obj
+ 0001:00000050       ??1?$tuple@VQString@@H@std@@QAE@XZ 10001050 f i TPMainController.obj
+ 0001:00000060       ??1TPTopFrameController@@UAE@XZ 10001060 f i TPMainController.obj
+ 0001:00000060       ??1TPMainController@@UAE@XZ 10001060 f i TPMainController.obj
+ 0001:00000070       ??1TPPlayController@@UAE@XZ 10001070 f i TPMainController.obj
+ 0001:00000080       ??_ETPMainController@@UAEPAXI@Z 10001080 f i TPMainController.obj
+ 0001:00000130       ??_FTPMainController@@QAEXXZ 10001130 f i TPMainController.obj
+ 0001:00000150       ??_FTPPlayController@@QAEXXZ 10001150 f i TPMainController.obj
+ 0001:00000160       ??_FTPTopFrameController@@QAEXXZ 10001160 f i TPMainController.obj
+ 0001:00000170       ?install@TPMainController@@QAEXXZ 10001170 f   TPMainController.obj
+ 0001:00000290       ?tr@TPMainController@@SA?AVQString@@PBD0H@Z 10001290 f i TPMainController.obj
+ 0001:00000290       ?trUtf8@TPMainController@@SA?AVQString@@PBD0H@Z 10001290 f i TPMainController.obj
+ 0001:000002b0       ?trUtf8@TPPlayController@@SA?AVQString@@PBD0H@Z 100012b0 f i TPMainController.obj
+ 0001:000002b0       ?tr@TPPlayController@@SA?AVQString@@PBD0H@Z 100012b0 f i TPMainController.obj
+ 0001:000002d0       ?trUtf8@TPTopFrameController@@SA?AVQString@@PBD0H@Z 100012d0 f i TPMainController.obj
+ 0001:000002d0       ?tr@TPTopFrameController@@SA?AVQString@@PBD0H@Z 100012d0 f i TPMainController.obj
+ 0001:000002f0       ??0?$InterfacePtr@VITPCoreFramework@@@@QAE@ABH@Z 100012f0 f i TPPlayController.obj
+ 0001:00000390       ??0TPPlayController@@QAE@PAVQWidget@@@Z 10001390 f   TPPlayController.obj
+ 0001:000003d0       ??C?$InterfacePtr@VITPCoreFramework@@@@QAEPAVITPCoreFramework@@XZ 100013d0 f i TPPlayController.obj
+ 0001:00000490       ??_ETPPlayController@@UAEPAXI@Z 10001490 f i TPPlayController.obj
+ 0001:00000532       ??_ETPPlayController@@W7AEPAXI@Z 10001532 f i TPPlayController.obj
+ 0001:0000053a       ??_ETPPlayWidget@@W7AEPAXI@Z 1000153a f i TPPlayController.obj
+ 0001:00000550       ??_ETPPlayWidget@@UAEPAXI@Z 10001550 f i TPPlayController.obj
+ 0001:00000550       ??_GTPPlayWidget@@UAEPAXI@Z 10001550 f i TPPlayController.obj
+ 0001:00000580       ?getObject@TPPlayController@@UAEPAVQObject@@XZ 10001580 f   TPPlayController.obj
+ 0001:00000590       ?getTopWidget@TPTopFrameController@@UAEPAVQWidget@@XZ 10001590 f   TPTopFrameController.obj
+ 0001:00000590       ?getWidget@TPPlayController@@UAEPAVQWidget@@XZ 10001590 f   TPPlayController.obj
+ 0001:000005a0       ?impl@?$QSlotObject@P8TPPlayController@@AEXN@ZU?$List@N@QtPrivate@@X@QtPrivate@@CAXHPAVQSlotObjectBase@2@PAVQObject@@PAPAXPA_N@Z 100015a0 f i TPPlayController.obj
+ 0001:00000620       ?impl@?$QSlotObject@P8TPPlayController@@AEXXZU?$List@$$V@QtPrivate@@X@QtPrivate@@CAXHPAVQSlotObjectBase@2@PAVQObject@@PAPAXPA_N@Z 10001620 f i TPPlayController.obj
+ 0001:00000690       ?initController@TPPlayController@@UAEXXZ 10001690 f   TPPlayController.obj
+ 0001:00000870       ?sltOpenFile@TPPlayController@@QAEXXZ 10001870 f   TPPlayController.obj
+ 0001:00000990       ?sltPlayOrPause@TPPlayController@@QAEXXZ 10001990 f   TPPlayController.obj
+ 0001:000009c0       ?sltSliderChange@TPPlayController@@QAEXN@Z 100019c0 f   TPPlayController.obj
+ 0001:00000a10       ??0TPTopFrameController@@QAE@PAVQObject@@@Z 10001a10 f   TPTopFrameController.obj
+ 0001:00000a50       ??_ETPTopFrameController@@UAEPAXI@Z 10001a50 f i TPTopFrameController.obj
+ 0001:00000af2       ??_ETPTopFrameWidget@@W7AEPAXI@Z 10001af2 f i TPTopFrameController.obj
+ 0001:00000b00       ??_GTPTopFrameWidget@@UAEPAXI@Z 10001b00 f i TPTopFrameController.obj
+ 0001:00000b00       ??_ETPTopFrameWidget@@UAEPAXI@Z 10001b00 f i TPTopFrameController.obj
+ 0001:00000b30       ?getObject@TPTopFrameController@@UAEPAVQObject@@XZ 10001b30 f   TPTopFrameController.obj
+ 0001:00000b40       ?initController@TPTopFrameController@@UAEXXZ 10001b40 f   TPTopFrameController.obj
+ 0001:00000cb0       ?metaObject@TPMainController@@UBEPBUQMetaObject@@XZ 10001cb0 f   moc_TPMainController.obj
+ 0001:00000cd0       ?qt_metacall@TPTopFrameController@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10001cd0 f   moc_TPTopFrameController.obj
+ 0001:00000cd0       ?qt_metacall@TPMainController@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10001cd0 f   moc_TPMainController.obj
+ 0001:00000ce0       ?qt_metacast@TPMainController@@UAEPAXPBD@Z 10001ce0 f   moc_TPMainController.obj
+ 0001:00000d40       ?qt_static_metacall@TPMainController@@CAXPAVQObject@@W4Call@QMetaObject@@HPAPAX@Z 10001d40 f   moc_TPMainController.obj
+ 0001:00000d40       @_guard_check_icall_nop@4  10001d40 f   MSVCRT:guard_support.obj
+ 0001:00000d40       ?qt_static_metacall@TPTopFrameController@@CAXPAVQObject@@W4Call@QMetaObject@@HPAPAX@Z 10001d40 f   moc_TPTopFrameController.obj
+ 0001:00000d50       ?metaObject@TPPlayController@@UBEPBUQMetaObject@@XZ 10001d50 f   moc_TPPlayController.obj
+ 0001:00000d70       ?qt_metacall@TPPlayController@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10001d70 f   moc_TPPlayController.obj
+ 0001:00000dd0       ?qt_metacast@TPPlayController@@UAEPAXPBD@Z 10001dd0 f   moc_TPPlayController.obj
+ 0001:00000e70       ?qt_static_metacall@TPPlayController@@CAXPAVQObject@@W4Call@QMetaObject@@HPAPAX@Z 10001e70 f   moc_TPPlayController.obj
+ 0001:00000ec0       ?metaObject@TPTopFrameController@@UBEPBUQMetaObject@@XZ 10001ec0 f   moc_TPTopFrameController.obj
+ 0001:00000ee0       ?qt_metacast@TPTopFrameController@@UAEPAXPBD@Z 10001ee0 f   moc_TPTopFrameController.obj
+ 0001:00000f7c       ?metaObject@TPPlayWidget@@UBEPBUQMetaObject@@XZ 10001f7c f   TPUI:TPUI.dll
+ 0001:00000f82       ?mouseDoubleClickEvent@TPPlayWidget@@UAEXPAVQMouseEvent@@@Z 10001f82 f   TPUI:TPUI.dll
+ 0001:00000f88       ?qt_metacall@TPPlayWidget@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10001f88 f   TPUI:TPUI.dll
+ 0001:00000f8e       ?qt_metacast@TPPlayWidget@@UAEPAXPBD@Z 10001f8e f   TPUI:TPUI.dll
+ 0001:00000f94       ?resizeEvent@TPPlayWidget@@UAEXPAVQResizeEvent@@@Z 10001f94 f   TPUI:TPUI.dll
+ 0001:00000f9a       ?metaObject@TPTopFrameWidget@@UBEPBUQMetaObject@@XZ 10001f9a f   TPUI:TPUI.dll
+ 0001:00000fa0       ?qt_metacall@TPTopFrameWidget@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10001fa0 f   TPUI:TPUI.dll
+ 0001:00000fa6       ?qt_metacast@TPTopFrameWidget@@UAEPAXPBD@Z 10001fa6 f   TPUI:TPUI.dll
+ 0001:00000fac       ?actionEvent@QWidget@@MAEXPAVQActionEvent@@@Z 10001fac f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fb2       ?changeEvent@QWidget@@MAEXPAVQEvent@@@Z 10001fb2 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fb8       ?closeEvent@QWidget@@MAEXPAVQCloseEvent@@@Z 10001fb8 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fbe       ?contextMenuEvent@QWidget@@MAEXPAVQContextMenuEvent@@@Z 10001fbe f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fc4       ?devType@QWidget@@UBEHXZ   10001fc4 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fca       ?dragEnterEvent@QWidget@@MAEXPAVQDragEnterEvent@@@Z 10001fca f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fd0       ?dragLeaveEvent@QWidget@@MAEXPAVQDragLeaveEvent@@@Z 10001fd0 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fd6       ?dragMoveEvent@QWidget@@MAEXPAVQDragMoveEvent@@@Z 10001fd6 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fdc       ?dropEvent@QWidget@@MAEXPAVQDropEvent@@@Z 10001fdc f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fe2       ?enterEvent@QWidget@@MAEXPAVQEvent@@@Z 10001fe2 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fe8       ?event@QWidget@@MAE_NPAVQEvent@@@Z 10001fe8 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000fee       ?focusInEvent@QWidget@@MAEXPAVQFocusEvent@@@Z 10001fee f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000ff4       ?focusNextPrevChild@QWidget@@MAE_N_N@Z 10001ff4 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00000ffa       ?focusOutEvent@QWidget@@MAEXPAVQFocusEvent@@@Z 10001ffa f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001000       ?hasHeightForWidth@QWidget@@UBE_NXZ 10002000 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001006       ?heightForWidth@QWidget@@UBEHH@Z 10002006 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000100c       ?hideEvent@QWidget@@MAEXPAVQHideEvent@@@Z 1000200c f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001012       ?initPainter@QWidget@@MBEXPAVQPainter@@@Z 10002012 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001018       ?inputMethodEvent@QWidget@@MAEXPAVQInputMethodEvent@@@Z 10002018 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000101e       ?inputMethodQuery@QWidget@@UBE?AVQVariant@@W4InputMethodQuery@Qt@@@Z 1000201e f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001024       ?keyPressEvent@QWidget@@MAEXPAVQKeyEvent@@@Z 10002024 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000102a       ?keyReleaseEvent@QWidget@@MAEXPAVQKeyEvent@@@Z 1000202a f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001030       ?leaveEvent@QWidget@@MAEXPAVQEvent@@@Z 10002030 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001036       ?metric@QWidget@@MBEHW4PaintDeviceMetric@QPaintDevice@@@Z 10002036 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000103c       ?minimumSizeHint@QWidget@@UBE?AVQSize@@XZ 1000203c f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001042       ?mouseDoubleClickEvent@QWidget@@MAEXPAVQMouseEvent@@@Z 10002042 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001048       ?mouseMoveEvent@QWidget@@MAEXPAVQMouseEvent@@@Z 10002048 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000104e       ?mousePressEvent@QWidget@@MAEXPAVQMouseEvent@@@Z 1000204e f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001054       ?mouseReleaseEvent@QWidget@@MAEXPAVQMouseEvent@@@Z 10002054 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000105a       ?moveEvent@QWidget@@MAEXPAVQMoveEvent@@@Z 1000205a f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001060       ?nativeEvent@QWidget@@MAE_NABVQByteArray@@PAXPAJ@Z 10002060 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001066       ?paintEngine@QWidget@@UBEPAVQPaintEngine@@XZ 10002066 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000106c       ?paintEvent@QWidget@@MAEXPAVQPaintEvent@@@Z 1000206c f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001072       ?redirected@QWidget@@MBEPAVQPaintDevice@@PAVQPoint@@@Z 10002072 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001078       ?resizeEvent@QWidget@@MAEXPAVQResizeEvent@@@Z 10002078 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000107e       ?setVisible@QWidget@@UAEX_N@Z 1000207e f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001084       ?sharedPainter@QWidget@@MBEPAVQPainter@@XZ 10002084 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000108a       ?showEvent@QWidget@@MAEXPAVQShowEvent@@@Z 1000208a f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001090       ?sizeHint@QWidget@@UBE?AVQSize@@XZ 10002090 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:00001096       ?tabletEvent@QWidget@@MAEXPAVQTabletEvent@@@Z 10002096 f   Qt5Widgets:Qt5Widgets.dll
+ 0001:0000109c       ?wheelEvent@QWidget@@MAEXPAVQWheelEvent@@@Z 1000209c f   Qt5Widgets:Qt5Widgets.dll
+ 0001:000010a2       ?childEvent@QObject@@MAEXPAVQChildEvent@@@Z 100020a2 f   Qt5Core:Qt5Core.dll
+ 0001:000010a8       ?connectNotify@QObject@@MAEXABVQMetaMethod@@@Z 100020a8 f   Qt5Core:Qt5Core.dll
+ 0001:000010ae       ?customEvent@QObject@@MAEXPAVQEvent@@@Z 100020ae f   Qt5Core:Qt5Core.dll
+ 0001:000010b4       ?disconnectNotify@QObject@@MAEXABVQMetaMethod@@@Z 100020b4 f   Qt5Core:Qt5Core.dll
+ 0001:000010ba       ?event@QObject@@UAE_NPAVQEvent@@@Z 100020ba f   Qt5Core:Qt5Core.dll
+ 0001:000010c0       ?eventFilter@QObject@@UAE_NPAV1@PAVQEvent@@@Z 100020c0 f   Qt5Core:Qt5Core.dll
+ 0001:000010c6       ?timerEvent@QObject@@MAEXPAVQTimerEvent@@@Z 100020c6 f   Qt5Core:Qt5Core.dll
+ 0001:000010cc       ??_M@YGXPAXIIP6EX0@Z@Z     100020cc f   MSVCRT:ehvecdtr.obj
+ 0001:00001151       ?__ArrayUnwind@@YGXPAXIIP6EX0@Z@Z 10002151 f   MSVCRT:ehvecdtr.obj
+ 0001:000011e1       ??2@YAPAXI@Z               100021e1 f   MSVCRT:new_scalar.obj
+ 0001:00001211       ??3@YAXPAXI@Z              10002211 f   MSVCRT:delete_scalar_size.obj
+ 0001:0000121f       ??_V@YAXPAXI@Z             1000221f f   MSVCRT:delete_array_size.obj
+ 0001:0000122d       @__security_check_cookie@4 1000222d f   MSVCRT:secchk.obj
+ 0001:0000123b       ??_Etype_info@@UAEPAXI@Z   1000223b f i MSVCRT:std_type_info_static.obj
+ 0001:0000123b       ??_Gtype_info@@UAEPAXI@Z   1000223b f i MSVCRT:std_type_info_static.obj
+ 0001:0000159e       __DllMainCRTStartup@12     1000259e f   MSVCRT:dll_dllmain.obj
+ 0001:000015d0       __SEH_prolog4              100025d0 f   MSVCRT:sehprolg4.obj
+ 0001:00001615       __except_handler4          10002615 f   MSVCRT:chandler4gs.obj
+ 0001:00001644       ??0bad_alloc@std@@QAE@ABV01@@Z 10002644 f i MSVCRT:throw_bad_alloc.obj
+ 0001:0000165f       ??0bad_alloc@std@@QAE@XZ   1000265f f i MSVCRT:throw_bad_alloc.obj
+ 0001:00001677       ??0bad_array_new_length@std@@QAE@ABV01@@Z 10002677 f i MSVCRT:throw_bad_alloc.obj
+ 0001:00001692       ??0bad_array_new_length@std@@QAE@XZ 10002692 f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016aa       ??0exception@std@@QAE@ABV01@@Z 100026aa f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016d6       ??1bad_array_new_length@std@@UAE@XZ 100026d6 f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016d6       ??1bad_alloc@std@@UAE@XZ   100026d6 f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016e7       ??_Ebad_array_new_length@std@@UAEPAXI@Z 100026e7 f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016e7       ??_Eexception@std@@UAEPAXI@Z 100026e7 f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016e7       ??_Gbad_array_new_length@std@@UAEPAXI@Z 100026e7 f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016e7       ??_Gbad_alloc@std@@UAEPAXI@Z 100026e7 f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016e7       ??_Ebad_alloc@std@@UAEPAXI@Z 100026e7 f i MSVCRT:throw_bad_alloc.obj
+ 0001:000016e7       ??_Gexception@std@@UAEPAXI@Z 100026e7 f i MSVCRT:throw_bad_alloc.obj
+ 0001:00001714       ?__scrt_throw_std_bad_alloc@@YAXXZ 10002714 f   MSVCRT:throw_bad_alloc.obj
+ 0001:00001731       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 10002731 f   MSVCRT:throw_bad_alloc.obj
+ 0001:0000174e       ?what@exception@std@@UBEPBDXZ 1000274e f i MSVCRT:throw_bad_alloc.obj
+ 0001:0000175b       ??3@YAXPAX@Z               1000275b f   MSVCRT:delete_scalar.obj
+ 0001:00001760       ??_V@YAXPAX@Z              10002760 f   MSVCRT:delete_array.obj
+ 0001:00001765       ___raise_securityfailure   10002765 f   MSVCRT:gs_report.obj
+ 0001:0000178d       ___report_gsfailure        1000278d f   MSVCRT:gs_report.obj
+ 0001:000018d4       ___security_init_cookie    100028d4 f   MSVCRT:gs_support.obj
+ 0001:0000191f       _DllMain@12                1000291f f   MSVCRT:dll_dllmain_stub.obj
+ 0001:00001941       ?__scrt_initialize_type_info@@YAXXZ 10002941 f   MSVCRT:tncleanup.obj
+ 0001:0000194d       ?__scrt_uninitialize_type_info@@YAXXZ 1000294d f   MSVCRT:tncleanup.obj
+ 0001:00001959       ___local_stdio_printf_options 10002959 f i MSVCRT:default_local_stdio_options.obj
+ 0001:0000195f       ___local_stdio_scanf_options 1000295f f i MSVCRT:default_local_stdio_options.obj
+ 0001:00001965       ___scrt_initialize_default_local_stdio_options 10002965 f   MSVCRT:default_local_stdio_options.obj
+ 0001:000019c6       ___scrt_acquire_startup_lock 100029c6 f   MSVCRT:utility.obj
+ 0001:000019f8       ___scrt_dllmain_after_initialize_c 100029f8 f   MSVCRT:utility.obj
+ 0001:00001a23       ___scrt_dllmain_before_initialize_c 10002a23 f   MSVCRT:utility.obj
+ 0001:00001a31       ___scrt_dllmain_crt_thread_attach 10002a31 f   MSVCRT:utility.obj
+ 0001:00001a50       ___scrt_dllmain_crt_thread_detach 10002a50 f   MSVCRT:utility.obj
+ 0001:00001a5d       ___scrt_dllmain_exception_filter 10002a5d f   MSVCRT:utility.obj
+ 0001:00001a91       ___scrt_dllmain_uninitialize_c 10002a91 f   MSVCRT:utility.obj
+ 0001:00001ab4       ___scrt_dllmain_uninitialize_critical 10002ab4 f   MSVCRT:utility.obj
+ 0001:00001ac1       ___scrt_initialize_crt     10002ac1 f   MSVCRT:utility.obj
+ 0001:00001afa       ___scrt_initialize_onexit_tables 10002afa f   MSVCRT:utility.obj
+ 0001:00001b81       ___scrt_is_nonwritable_in_current_image 10002b81 f   MSVCRT:utility.obj
+ 0001:00001c15       ___scrt_release_startup_lock 10002c15 f   MSVCRT:utility.obj
+ 0001:00001c32       ___scrt_uninitialize_crt   10002c32 f   MSVCRT:utility.obj
+ 0001:00001c5a       ___scrt_get_dyn_tls_init_callback 10002c5a f   MSVCRT:dyn_tls_init.obj
+ 0001:00001c60       ___scrt_fastfail           10002c60 f   MSVCRT:utility_desktop.obj
+ 0001:00001d7b       __crt_debugger_hook        10002d7b f   MSVCRT:utility_desktop.obj
+ 0001:00001d83       __RTC_Initialize           10002d83 f   MSVCRT:initsect.obj
+ 0001:00001daf       __RTC_Terminate            10002daf f   MSVCRT:initsect.obj
+ 0001:00001ddb       ___isa_available_init      10002ddb f   MSVCRT:cpu_disp.obj
+ 0001:00001fac       __get_startup_argv_mode    10002fac f   MSVCRT:argv_mode.obj
+ 0001:00001fb0       ___scrt_is_ucrt_dll_in_use 10002fb0 f   MSVCRT:ucrt_detection.obj
+ 0001:00001fbc       ___CxxFrameHandler3        10002fbc f   vcruntime:VCRUNTIME140.dll
+ 0001:00001fc2       __purecall                 10002fc2 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001fc8       ___RTDynamicCast           10002fc8 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001fce       ___current_exception       10002fce f   vcruntime:VCRUNTIME140.dll
+ 0001:00001fd4       ___current_exception_context 10002fd4 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001fda       __except_handler4_common   10002fda f   vcruntime:VCRUNTIME140.dll
+ 0001:00001fe0       ___std_exception_copy      10002fe0 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001fe6       ___std_exception_destroy   10002fe6 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001fec       __CxxThrowException@8      10002fec f   vcruntime:VCRUNTIME140.dll
+ 0001:00001ff2       ___std_type_info_destroy_list 10002ff2 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001ff8       _memset                    10002ff8 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001ffe       _terminate                 10002ffe f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00002004       __callnewh                 10003004 f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0001:0000200a       _malloc                    1000300a f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0001:00002010       __initterm                 10003010 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00002016       __initterm_e               10003016 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000201c       _free                      1000301c f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0001:00002022       __seh_filter_dll           10003022 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00002028       __configure_narrow_argv    10003028 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000202e       __initialize_narrow_environment 1000302e f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00002034       __initialize_onexit_table  10003034 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000203a       __execute_onexit_table     1000303a f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00002040       __cexit                    10003040 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00002046       __filter_x86_sse2_floating_point_exception 10003046 f   MSVCRT:x86_exception_filter.obj
+ 0001:00002046       __filter_x86_sse2_floating_point_exception_default 10003046 f   MSVCRT:x86_exception_filter.obj
+ 0001:000020be       ___acrt_initialize         100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___vcrt_uninitialize       100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___scrt_stub_for_acrt_thread_detach 100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___acrt_thread_detach      100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___vcrt_initialize         100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___scrt_stub_for_acrt_initialize 100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___vcrt_uninitialize_critical 100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___scrt_stub_for_acrt_uninitialize 100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___acrt_uninitialize_critical 100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___vcrt_thread_detach      100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___acrt_uninitialize       100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___scrt_stub_for_acrt_thread_attach 100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___acrt_thread_attach      100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___scrt_stub_for_acrt_uninitialize_critical 100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020be       ___vcrt_thread_attach      100030be f   MSVCRT:ucrt_stubs.obj
+ 0001:000020c1       __is_c_termination_complete 100030c1 f   MSVCRT:ucrt_stubs.obj
+ 0001:000020c1       ___scrt_stub_for_is_c_termination_complete 100030c1 f   MSVCRT:ucrt_stubs.obj
+ 0002:00000000       __imp__InitializeSListHead@4 10004000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__SetUnhandledExceptionFilter@4 10004004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__GetCurrentProcess@0 10004008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__TerminateProcess@8  1000400c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__IsProcessorFeaturePresent@4 10004010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__QueryPerformanceCounter@4 10004014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__GetCurrentProcessId@0 10004018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__IsDebuggerPresent@0 1000401c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__UnhandledExceptionFilter@4 10004020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__DisableThreadLibraryCalls@4 10004024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__GetSystemTimeAsFileTime@4 10004028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__GetCurrentThreadId@0 1000402c     kernel32:KERNEL32.dll
+ 0002:00000030       \177KERNEL32_NULL_THUNK_DATA 10004030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp_?disconnectNotify@QObject@@MAEXABVQMetaMethod@@@Z 10004034     Qt5Core:Qt5Core.dll
+ 0002:00000038       __imp_?event@QObject@@UAE_NPAVQEvent@@@Z 10004038     Qt5Core:Qt5Core.dll
+ 0002:0000003c       __imp_?eventFilter@QObject@@UAE_NPAV1@PAVQEvent@@@Z 1000403c     Qt5Core:Qt5Core.dll
+ 0002:00000040       __imp_?timerEvent@QObject@@MAEXPAVQTimerEvent@@@Z 10004040     Qt5Core:Qt5Core.dll
+ 0002:00000044       __imp_??1Connection@QMetaObject@@QAE@XZ 10004044     Qt5Core:Qt5Core.dll
+ 0002:00000048       __imp_?customEvent@QObject@@MAEXPAVQEvent@@@Z 10004048     Qt5Core:Qt5Core.dll
+ 0002:0000004c       __imp_??0QObject@@QAE@PAV0@@Z 1000404c     Qt5Core:Qt5Core.dll
+ 0002:00000050       __imp_?qt_metacall@QObject@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10004050     Qt5Core:Qt5Core.dll
+ 0002:00000054       __imp_?qt_metacast@QObject@@UAEPAXPBD@Z 10004054     Qt5Core:Qt5Core.dll
+ 0002:00000058       __imp_?dynamicMetaObject@QObjectData@@QBEPAUQMetaObject@@XZ 10004058     Qt5Core:Qt5Core.dll
+ 0002:0000005c       __imp_?staticMetaObject@QObject@@2UQMetaObject@@B 1000405c     Qt5Core:Qt5Core.dll
+ 0002:00000060       __imp_?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PBV1@PAPAX01PAVQSlotObjectBase@QtPrivate@@W4ConnectionType@Qt@@PBHPBU3@@Z 10004060     Qt5Core:Qt5Core.dll
+ 0002:00000064       __imp_??0QString@@QAE@ABV0@@Z 10004064     Qt5Core:Qt5Core.dll
+ 0002:00000068       __imp_??0QString@@QAE@XZ   10004068     Qt5Core:Qt5Core.dll
+ 0002:0000006c       __imp_?fromAscii_helper@QString@@CAPAU?$QTypedArrayData@G@@PBDH@Z 1000406c     Qt5Core:Qt5Core.dll
+ 0002:00000070       __imp_??1QString@@QAE@XZ   10004070     Qt5Core:Qt5Core.dll
+ 0002:00000074       __imp_?tr@QMetaObject@@QBE?AVQString@@PBD0H@Z 10004074     Qt5Core:Qt5Core.dll
+ 0002:00000078       __imp_?childEvent@QObject@@MAEXPAVQChildEvent@@@Z 10004078     Qt5Core:Qt5Core.dll
+ 0002:0000007c       __imp_?connectNotify@QObject@@MAEXABVQMetaMethod@@@Z 1000407c     Qt5Core:Qt5Core.dll
+ 0002:00000080       __imp_??1QObject@@UAE@XZ   10004080     Qt5Core:Qt5Core.dll
+ 0002:00000084       \177Qt5Core_NULL_THUNK_DATA 10004084     Qt5Core:Qt5Core.dll
+ 0002:00000088       __imp_?contextMenuEvent@QWidget@@MAEXPAVQContextMenuEvent@@@Z 10004088     Qt5Widgets:Qt5Widgets.dll
+ 0002:0000008c       __imp_?devType@QWidget@@UBEHXZ 1000408c     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000090       __imp_?dragEnterEvent@QWidget@@MAEXPAVQDragEnterEvent@@@Z 10004090     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000094       __imp_?dragLeaveEvent@QWidget@@MAEXPAVQDragLeaveEvent@@@Z 10004094     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000098       __imp_?dragMoveEvent@QWidget@@MAEXPAVQDragMoveEvent@@@Z 10004098     Qt5Widgets:Qt5Widgets.dll
+ 0002:0000009c       __imp_?changeEvent@QWidget@@MAEXPAVQEvent@@@Z 1000409c     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000a0       __imp_?enterEvent@QWidget@@MAEXPAVQEvent@@@Z 100040a0     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000a4       __imp_?event@QWidget@@MAE_NPAVQEvent@@@Z 100040a4     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000a8       __imp_?focusInEvent@QWidget@@MAEXPAVQFocusEvent@@@Z 100040a8     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000ac       __imp_?focusNextPrevChild@QWidget@@MAE_N_N@Z 100040ac     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000b0       __imp_?focusOutEvent@QWidget@@MAEXPAVQFocusEvent@@@Z 100040b0     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000b4       __imp_?hasHeightForWidth@QWidget@@UBE_NXZ 100040b4     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000b8       __imp_?heightForWidth@QWidget@@UBEHH@Z 100040b8     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000bc       __imp_?hideEvent@QWidget@@MAEXPAVQHideEvent@@@Z 100040bc     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000c0       __imp_?initPainter@QWidget@@MBEXPAVQPainter@@@Z 100040c0     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000c4       __imp_?inputMethodEvent@QWidget@@MAEXPAVQInputMethodEvent@@@Z 100040c4     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000c8       __imp_?inputMethodQuery@QWidget@@UBE?AVQVariant@@W4InputMethodQuery@Qt@@@Z 100040c8     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000cc       __imp_?keyPressEvent@QWidget@@MAEXPAVQKeyEvent@@@Z 100040cc     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000d0       __imp_?keyReleaseEvent@QWidget@@MAEXPAVQKeyEvent@@@Z 100040d0     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000d4       __imp_?leaveEvent@QWidget@@MAEXPAVQEvent@@@Z 100040d4     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000d8       __imp_?metric@QWidget@@MBEHW4PaintDeviceMetric@QPaintDevice@@@Z 100040d8     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000dc       __imp_?minimumSizeHint@QWidget@@UBE?AVQSize@@XZ 100040dc     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000e0       __imp_?mouseDoubleClickEvent@QWidget@@MAEXPAVQMouseEvent@@@Z 100040e0     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000e4       __imp_?mouseMoveEvent@QWidget@@MAEXPAVQMouseEvent@@@Z 100040e4     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000e8       __imp_?mousePressEvent@QWidget@@MAEXPAVQMouseEvent@@@Z 100040e8     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000ec       __imp_?mouseReleaseEvent@QWidget@@MAEXPAVQMouseEvent@@@Z 100040ec     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000f0       __imp_?moveEvent@QWidget@@MAEXPAVQMoveEvent@@@Z 100040f0     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000f4       __imp_?nativeEvent@QWidget@@MAE_NABVQByteArray@@PAXPAJ@Z 100040f4     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000f8       __imp_?paintEngine@QWidget@@UBEPAVQPaintEngine@@XZ 100040f8     Qt5Widgets:Qt5Widgets.dll
+ 0002:000000fc       __imp_?paintEvent@QWidget@@MAEXPAVQPaintEvent@@@Z 100040fc     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000100       __imp_?redirected@QWidget@@MBEPAVQPaintDevice@@PAVQPoint@@@Z 10004100     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000104       __imp_?resizeEvent@QWidget@@MAEXPAVQResizeEvent@@@Z 10004104     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000108       __imp_?setVisible@QWidget@@UAEX_N@Z 10004108     Qt5Widgets:Qt5Widgets.dll
+ 0002:0000010c       __imp_?sharedPainter@QWidget@@MBEPAVQPainter@@XZ 1000410c     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000110       __imp_?showEvent@QWidget@@MAEXPAVQShowEvent@@@Z 10004110     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000114       __imp_?actionEvent@QWidget@@MAEXPAVQActionEvent@@@Z 10004114     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000118       __imp_?tabletEvent@QWidget@@MAEXPAVQTabletEvent@@@Z 10004118     Qt5Widgets:Qt5Widgets.dll
+ 0002:0000011c       __imp_?wheelEvent@QWidget@@MAEXPAVQWheelEvent@@@Z 1000411c     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000120       __imp_?staticMetaObject@QWidget@@2UQMetaObject@@B 10004120     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000124       __imp_?qt_metacast@QWidget@@UAEPAXPBD@Z 10004124     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000128       __imp_?qt_metacall@QWidget@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10004128     Qt5Widgets:Qt5Widgets.dll
+ 0002:0000012c       __imp_?getOpenFileName@QFileDialog@@SA?AVQString@@PAVQWidget@@ABV2@11PAV2@V?$QFlags@W4Option@QFileDialog@@@@@Z 1000412c     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000130       __imp_?setWindowTitle@QWidget@@QAEXABVQString@@@Z 10004130     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000134       __imp_??0QWidget@@QAE@PAV0@V?$QFlags@W4WindowType@Qt@@@@@Z 10004134     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000138       __imp_??1QWidget@@UAE@XZ   10004138     Qt5Widgets:Qt5Widgets.dll
+ 0002:0000013c       __imp_?closeEvent@QWidget@@MAEXPAVQCloseEvent@@@Z 1000413c     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000140       __imp_?dropEvent@QWidget@@MAEXPAVQDropEvent@@@Z 10004140     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000144       __imp_?sizeHint@QWidget@@UBE?AVQSize@@XZ 10004144     Qt5Widgets:Qt5Widgets.dll
+ 0002:00000148       \177Qt5Widgets_NULL_THUNK_DATA 10004148     Qt5Widgets:Qt5Widgets.dll
+ 0002:0000014c       __imp_??8NanoLog@TPNanolog@@QAE_NAAVTPNanoLogLine@1@@Z 1000414c     TPBase:TPBase.dll
+ 0002:00000150       __imp_?encode@TPNanoLogLine@TPNanolog@@AAEXUstring_literal_t@12@@Z 10004150     TPBase:TPBase.dll
+ 0002:00000154       __imp_??1TPNanoLogLine@TPNanolog@@QAE@XZ 10004154     TPBase:TPBase.dll
+ 0002:00000158       __imp_??0TPNanoLogLine@TPNanolog@@QAE@W4LogLevel@1@PBD1I@Z 10004158     TPBase:TPBase.dll
+ 0002:0000015c       __imp_?is_logged@TPNanolog@@YA_NW4LogLevel@1@@Z 1000415c     TPBase:TPBase.dll
+ 0002:00000160       __imp_?getObjectMgr@TPGlobalInfoMgr@@SAPAVTPInterfaceMgr@@XZ 10004160     TPBase:TPBase.dll
+ 0002:00000164       \177TPBase_NULL_THUNK_DATA 10004164     TPBase:TPBase.dll
+ 0002:00000168       __imp_?g_pVideoWidget@@3PAVITPVideoWidget@@A 10004168     TPFramework:TPFramework.dll
+ 0002:0000016c       \177TPFramework_NULL_THUNK_DATA 1000416c     TPFramework:TPFramework.dll
+ 0002:00000170       __imp_?qt_metacast@TPTopFrameWidget@@UAEPAXPBD@Z 10004170     TPUI:TPUI.dll
+ 0002:00000174       __imp_?qt_metacall@TPTopFrameWidget@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10004174     TPUI:TPUI.dll
+ 0002:00000178       __imp_?metaObject@TPTopFrameWidget@@UBEPBUQMetaObject@@XZ 10004178     TPUI:TPUI.dll
+ 0002:0000017c       __imp_?initUI@TPTopFrameWidget@@QAEXXZ 1000417c     TPUI:TPUI.dll
+ 0002:00000180       __imp_??1TPTopFrameWidget@@UAE@XZ 10004180     TPUI:TPUI.dll
+ 0002:00000184       __imp_??0TPTopFrameWidget@@QAE@PAVQWidget@@@Z 10004184     TPUI:TPUI.dll
+ 0002:00000188       __imp_?staticMetaObject@TPPlayWidget@@2UQMetaObject@@B 10004188     TPUI:TPUI.dll
+ 0002:0000018c       __imp_?resizeEvent@TPPlayWidget@@UAEXPAVQResizeEvent@@@Z 1000418c     TPUI:TPUI.dll
+ 0002:00000190       __imp_??0TPPlayWidget@@QAE@PAVQWidget@@@Z 10004190     TPUI:TPUI.dll
+ 0002:00000194       __imp_?qt_metacall@TPPlayWidget@@UAEHW4Call@QMetaObject@@HPAPAX@Z 10004194     TPUI:TPUI.dll
+ 0002:00000198       __imp_?mouseDoubleClickEvent@TPPlayWidget@@UAEXPAVQMouseEvent@@@Z 10004198     TPUI:TPUI.dll
+ 0002:0000019c       __imp_?metaObject@TPPlayWidget@@UBEPBUQMetaObject@@XZ 1000419c     TPUI:TPUI.dll
+ 0002:000001a0       __imp_??1TPPlayWidget@@UAE@XZ 100041a0     TPUI:TPUI.dll
+ 0002:000001a4       __imp_?sglSliderChange@TPPlayWidget@@QAEXN@Z 100041a4     TPUI:TPUI.dll
+ 0002:000001a8       __imp_?sglPlayOrPause@TPPlayWidget@@QAEXXZ 100041a8     TPUI:TPUI.dll
+ 0002:000001ac       __imp_?sglOpenFile@TPPlayWidget@@QAEXXZ 100041ac     TPUI:TPUI.dll
+ 0002:000001b0       __imp_?getSliderValue@TPPlayWidget@@QAENXZ 100041b0     TPUI:TPUI.dll
+ 0002:000001b4       __imp_?initUI@TPPlayWidget@@QAEXXZ 100041b4     TPUI:TPUI.dll
+ 0002:000001b8       __imp_?qt_metacast@TPPlayWidget@@UAEPAXPBD@Z 100041b8     TPUI:TPUI.dll
+ 0002:000001bc       \177TPUI_NULL_THUNK_DATA   100041bc     TPUI:TPUI.dll
+ 0002:000001c0       __imp____CxxFrameHandler3  100041c0     vcruntime:VCRUNTIME140.dll
+ 0002:000001c4       __imp___purecall           100041c4     vcruntime:VCRUNTIME140.dll
+ 0002:000001c8       __imp____RTDynamicCast     100041c8     vcruntime:VCRUNTIME140.dll
+ 0002:000001cc       __imp____current_exception 100041cc     vcruntime:VCRUNTIME140.dll
+ 0002:000001d0       __imp____current_exception_context 100041d0     vcruntime:VCRUNTIME140.dll
+ 0002:000001d4       __imp___except_handler4_common 100041d4     vcruntime:VCRUNTIME140.dll
+ 0002:000001d8       __imp____std_exception_copy 100041d8     vcruntime:VCRUNTIME140.dll
+ 0002:000001dc       __imp____std_exception_destroy 100041dc     vcruntime:VCRUNTIME140.dll
+ 0002:000001e0       __imp___CxxThrowException@8 100041e0     vcruntime:VCRUNTIME140.dll
+ 0002:000001e4       __imp____std_type_info_destroy_list 100041e4     vcruntime:VCRUNTIME140.dll
+ 0002:000001e8       __imp__memset              100041e8     vcruntime:VCRUNTIME140.dll
+ 0002:000001ec       \177VCRUNTIME140_NULL_THUNK_DATA 100041ec     vcruntime:VCRUNTIME140.dll
+ 0002:000001f0       __imp___callnewh           100041f0     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:000001f4       __imp__malloc              100041f4     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:000001f8       __imp__free                100041f8     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:000001fc       \177api-ms-win-crt-heap-l1-1-0_NULL_THUNK_DATA 100041fc     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:00000200       __imp___initterm_e         10004200     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000204       __imp___initterm           10004204     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000208       __imp___seh_filter_dll     10004208     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:0000020c       __imp___configure_narrow_argv 1000420c     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000210       __imp__terminate           10004210     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000214       __imp___initialize_onexit_table 10004214     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000218       __imp___execute_onexit_table 10004218     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:0000021c       __imp___cexit              1000421c     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000220       __imp___initialize_narrow_environment 10004220     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000224       \177api-ms-win-crt-runtime-l1-1-0_NULL_THUNK_DATA 10004224     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000228       ___guard_check_icall_fptr  10004228     MSVCRT:guard_support.obj
+ 0002:0000022c       ___xc_a                    1000422c     MSVCRT:initializers.obj
+ 0002:0000023c       ___xc_z                    1000423c     MSVCRT:initializers.obj
+ 0002:00000240       ___xi_a                    10004240     MSVCRT:initializers.obj
+ 0002:00000244       ___xi_z                    10004244     MSVCRT:initializers.obj
+ 0002:00000248       ___xp_a                    10004248     MSVCRT:initializers.obj
+ 0002:0000024c       ___xp_z                    1000424c     MSVCRT:initializers.obj
+ 0002:00000250       ___xt_a                    10004250     MSVCRT:initializers.obj
+ 0002:00000254       ___xt_z                    10004254     MSVCRT:initializers.obj
+ 0002:00000260       ??_7TPMainController@@6B@  10004260     TPMainController.obj
+ 0002:0000028c       ??_C@_0CG@PHCDOPC@org?4torchPlayer?4ITPTopFrameCont@ 1000428c     TPMainController.obj
+ 0002:000002b4       ??_C@_0CC@GFEECINI@org?4torchPlayer?4ITPPlayControll@ 100042b4     TPMainController.obj
+ 0002:000002dc       ??_STPPlayWidget@@6BQObject@@@ 100042dc     TPPlayController.obj
+ 0002:00000394       ??_STPPlayWidget@@6BQPaintDevice@@@ 10004394     TPPlayController.obj
+ 0002:000003b4       ??_7ITPPlayController@@6B@ 100043b4     TPPlayController.obj
+ 0002:000003c4       ??_7TPPlayController@@6BQObject@@@ 100043c4     TPPlayController.obj
+ 0002:0000047c       ??_7TPPlayController@@6BQPaintDevice@@@ 1000447c     TPPlayController.obj
+ 0002:0000049c       ??_7TPPlayController@@6B@  1000449c     TPPlayController.obj
+ 0002:000004a8       ??_C@_0CB@HGIEFFJI@org?4torchPlayer?4ITPCoreFramewor@ 100044a8     TPPlayController.obj
+ 0002:000004cc       ??_C@_0BD@DGEIAFLN@?i?$IA?$IJ?f?$IL?$KJ?h?$KH?$IG?i?$KC?$JB?f?$JG?$IH?d?$LL?$LG@ 100044cc     TPPlayController.obj
+ 0002:000004e0       ??_C@_0DC@KNIGHKPL@InterfacePtr?$DMclass?5ITPCoreFrame@ 100044e0     TPPlayController.obj
+ 0002:00000514       ??_C@_0CK@DMENPPDM@E?3?2torchPlayer?2Interface?2TPInte@ 10004514     TPPlayController.obj
+ 0002:00000540       ??_C@_0L@LLOCJKAF@?9?$DONULL?5ptr@ 10004540     TPPlayController.obj
+ 0002:00000550       ??_7ITPTopFrameController@@6B@ 10004550     TPTopFrameController.obj
+ 0002:00000560       ??_STPTopFrameWidget@@6BQObject@@@ 10004560     TPTopFrameController.obj
+ 0002:00000618       ??_STPTopFrameWidget@@6BQPaintDevice@@@ 10004618     TPTopFrameController.obj
+ 0002:00000638       ??_7TPTopFrameController@@6BQObject@@@ 10004638     TPTopFrameController.obj
+ 0002:00000668       ??_7TPTopFrameController@@6BITPTopFrameController@@@ 10004668     TPTopFrameController.obj
+ 0002:00000674       ??_C@_0DD@DEJPNMKI@InterfacePtr?$DMclass?5ITPPlayContr@ 10004674     TPTopFrameController.obj
+ 0002:0000077c       ??_C@_0BC@EGJEFABP@ITPPlayController@ 1000477c     moc_TPPlayController.obj
+ 0002:000007d0       ??_C@_0BG@JNFFGFMI@ITPTopFrameController@ 100047d0     moc_TPTopFrameController.obj
+ 0002:000007ec       ??_7type_info@@6B@         100047ec     MSVCRT:std_type_info_static.obj
+ 0002:000007f0       __pRawDllMain              100047f0     MSVCRT:dll_dllmain.obj
+ 0002:000007f0       __pDefaultRawDllMain       100047f0     MSVCRT:dll_dllmain.obj
+ 0002:000007f8       ??_7exception@std@@6B@     100047f8     MSVCRT:throw_bad_alloc.obj
+ 0002:00000800       ??_C@_0BC@EOODALEL@Unknown?5exception@ 10004800     MSVCRT:throw_bad_alloc.obj
+ 0002:00000818       ??_7bad_alloc@std@@6B@     10004818     MSVCRT:throw_bad_alloc.obj
+ 0002:00000820       ??_C@_0P@GHFPNOJB@bad?5allocation@ 10004820     MSVCRT:throw_bad_alloc.obj
+ 0002:00000834       ??_7bad_array_new_length@std@@6B@ 10004834     MSVCRT:throw_bad_alloc.obj
+ 0002:0000083c       ??_C@_0BF@KINCDENJ@bad?5array?5new?5length@ 1000483c     MSVCRT:throw_bad_alloc.obj
+ 0002:000008b0       __load_config_used         100048b0     MSVCRT:loadcfg.obj
+ 0002:00000980       ??_R4TPMainController@@6B@ 10004980     TPMainController.obj
+ 0002:00000994       ??_R3TPMainController@@8   10004994     TPMainController.obj
+ 0002:000009a4       ??_R2TPMainController@@8   100049a4     TPMainController.obj
+ 0002:000009b0       ??_R1A@?0A@EA@TPMainController@@8 100049b0     TPMainController.obj
+ 0002:000009cc       ??_R1A@?0A@EA@QObject@@8   100049cc     TPMainController.obj
+ 0002:000009e8       ??_R3QObject@@8            100049e8     TPMainController.obj
+ 0002:000009f8       ??_R2QObject@@8            100049f8     TPMainController.obj
+ 0002:00000a00       ??_R4TPPlayWidget@@6BQObject@@@ 10004a00     TPPlayController.obj
+ 0002:00000a14       ??_R3TPPlayWidget@@8       10004a14     TPPlayController.obj
+ 0002:00000a24       ??_R2TPPlayWidget@@8       10004a24     TPPlayController.obj
+ 0002:00000a38       ??_R1A@?0A@EA@TPPlayWidget@@8 10004a38     TPPlayController.obj
+ 0002:00000a54       ??_R1A@?0A@EA@QWidget@@8   10004a54     TPPlayController.obj
+ 0002:00000a70       ??_R3QWidget@@8            10004a70     TPPlayController.obj
+ 0002:00000a80       ??_R2QWidget@@8            10004a80     TPPlayController.obj
+ 0002:00000a90       ??_R17?0A@EA@QPaintDevice@@8 10004a90     TPPlayController.obj
+ 0002:00000aac       ??_R3QPaintDevice@@8       10004aac     TPPlayController.obj
+ 0002:00000abc       ??_R2QPaintDevice@@8       10004abc     TPPlayController.obj
+ 0002:00000ac4       ??_R1A@?0A@EA@QPaintDevice@@8 10004ac4     TPPlayController.obj
+ 0002:00000ae0       ??_R4TPPlayWidget@@6BQPaintDevice@@@ 10004ae0     TPPlayController.obj
+ 0002:00000af4       ??_R4ITPPlayController@@6B@ 10004af4     TPPlayController.obj
+ 0002:00000b08       ??_R3ITPPlayController@@8  10004b08     TPPlayController.obj
+ 0002:00000b18       ??_R2ITPPlayController@@8  10004b18     TPPlayController.obj
+ 0002:00000b20       ??_R1A@?0A@EA@ITPPlayController@@8 10004b20     TPPlayController.obj
+ 0002:00000b3c       ??_R4TPPlayController@@6BQObject@@@ 10004b3c     TPPlayController.obj
+ 0002:00000b50       ??_R3TPPlayController@@8   10004b50     TPPlayController.obj
+ 0002:00000b60       ??_R2TPPlayController@@8   10004b60     TPPlayController.obj
+ 0002:00000b78       ??_R1A@?0A@EA@TPPlayController@@8 10004b78     TPPlayController.obj
+ 0002:00000b94       ??_R1BI@?0A@EA@ITPPlayController@@8 10004b94     TPPlayController.obj
+ 0002:00000bb0       ??_R4TPPlayController@@6BQPaintDevice@@@ 10004bb0     TPPlayController.obj
+ 0002:00000bc4       ??_R4TPPlayController@@6B@ 10004bc4     TPPlayController.obj
+ 0002:00000bd8       ??_R4ITPTopFrameController@@6B@ 10004bd8     TPTopFrameController.obj
+ 0002:00000bec       ??_R3ITPTopFrameController@@8 10004bec     TPTopFrameController.obj
+ 0002:00000bfc       ??_R2ITPTopFrameController@@8 10004bfc     TPTopFrameController.obj
+ 0002:00000c04       ??_R1A@?0A@EA@ITPTopFrameController@@8 10004c04     TPTopFrameController.obj
+ 0002:00000c20       ??_R4TPTopFrameWidget@@6BQObject@@@ 10004c20     TPTopFrameController.obj
+ 0002:00000c34       ??_R3TPTopFrameWidget@@8   10004c34     TPTopFrameController.obj
+ 0002:00000c44       ??_R2TPTopFrameWidget@@8   10004c44     TPTopFrameController.obj
+ 0002:00000c58       ??_R1A@?0A@EA@TPTopFrameWidget@@8 10004c58     TPTopFrameController.obj
+ 0002:00000c74       ??_R4TPTopFrameWidget@@6BQPaintDevice@@@ 10004c74     TPTopFrameController.obj
+ 0002:00000c88       ??_R4TPTopFrameController@@6BQObject@@@ 10004c88     TPTopFrameController.obj
+ 0002:00000c9c       ??_R3TPTopFrameController@@8 10004c9c     TPTopFrameController.obj
+ 0002:00000cac       ??_R2TPTopFrameController@@8 10004cac     TPTopFrameController.obj
+ 0002:00000cbc       ??_R1A@?0A@EA@TPTopFrameController@@8 10004cbc     TPTopFrameController.obj
+ 0002:00000cd8       ??_R17?0A@EA@ITPTopFrameController@@8 10004cd8     TPTopFrameController.obj
+ 0002:00000cf4       ??_R4TPTopFrameController@@6BITPTopFrameController@@@ 10004cf4     TPTopFrameController.obj
+ 0002:00000d08       ??_R4type_info@@6B@        10004d08     MSVCRT:std_type_info_static.obj
+ 0002:00000d1c       ??_R3type_info@@8          10004d1c     MSVCRT:std_type_info_static.obj
+ 0002:00000d2c       ??_R2type_info@@8          10004d2c     MSVCRT:std_type_info_static.obj
+ 0002:00000d34       ??_R1A@?0A@EA@type_info@@8 10004d34     MSVCRT:std_type_info_static.obj
+ 0002:00000d50       ??_R4exception@std@@6B@    10004d50     MSVCRT:throw_bad_alloc.obj
+ 0002:00000d64       ??_R3exception@std@@8      10004d64     MSVCRT:throw_bad_alloc.obj
+ 0002:00000d74       ??_R2exception@std@@8      10004d74     MSVCRT:throw_bad_alloc.obj
+ 0002:00000d7c       ??_R1A@?0A@EA@exception@std@@8 10004d7c     MSVCRT:throw_bad_alloc.obj
+ 0002:00000d98       ??_R4bad_alloc@std@@6B@    10004d98     MSVCRT:throw_bad_alloc.obj
+ 0002:00000dac       ??_R3bad_alloc@std@@8      10004dac     MSVCRT:throw_bad_alloc.obj
+ 0002:00000dbc       ??_R2bad_alloc@std@@8      10004dbc     MSVCRT:throw_bad_alloc.obj
+ 0002:00000dc8       ??_R1A@?0A@EA@bad_alloc@std@@8 10004dc8     MSVCRT:throw_bad_alloc.obj
+ 0002:00000de4       ??_R4bad_array_new_length@std@@6B@ 10004de4     MSVCRT:throw_bad_alloc.obj
+ 0002:00000df8       ??_R3bad_array_new_length@std@@8 10004df8     MSVCRT:throw_bad_alloc.obj
+ 0002:00000e08       ??_R2bad_array_new_length@std@@8 10004e08     MSVCRT:throw_bad_alloc.obj
+ 0002:00000e18       ??_R1A@?0A@EA@bad_array_new_length@std@@8 10004e18     MSVCRT:throw_bad_alloc.obj
+ 0002:00000e34       ___safe_se_handler_table   10004e34     <linker-defined>
+ 0002:00000e54       ___volatile_metadata       10004e54     <linker-defined>
+ 0002:00001184       ___rtc_iaa                 10005184     MSVCRT:initsect.obj
+ 0002:00001188       ___rtc_izz                 10005188     MSVCRT:initsect.obj
+ 0002:0000118c       ___rtc_taa                 1000518c     MSVCRT:initsect.obj
+ 0002:00001190       ___rtc_tzz                 10005190     MSVCRT:initsect.obj
+ 0002:000013c4       __TI2?AVbad_alloc@std@@    100053c4     MSVCRT:throw_bad_alloc.obj
+ 0002:000013d4       __CTA2?AVbad_alloc@std@@   100053d4     MSVCRT:throw_bad_alloc.obj
+ 0002:000013e0       __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12 100053e0     MSVCRT:throw_bad_alloc.obj
+ 0002:000013fc       __CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12 100053fc     MSVCRT:throw_bad_alloc.obj
+ 0002:00001418       __TI3?AVbad_array_new_length@std@@ 10005418     MSVCRT:throw_bad_alloc.obj
+ 0002:00001428       __CTA3?AVbad_array_new_length@std@@ 10005428     MSVCRT:throw_bad_alloc.obj
+ 0002:00001438       __CT??_R0?AVbad_array_new_length@std@@@8??0bad_array_new_length@std@@QAE@ABV01@@Z12 10005438     MSVCRT:throw_bad_alloc.obj
+ 0002:00001eec       __IMPORT_DESCRIPTOR_TPBase 10005eec     TPBase:TPBase.dll
+ 0002:00001f00       __IMPORT_DESCRIPTOR_TPUI   10005f00     TPUI:TPUI.dll
+ 0002:00001f14       __IMPORT_DESCRIPTOR_TPFramework 10005f14     TPFramework:TPFramework.dll
+ 0002:00001f28       __IMPORT_DESCRIPTOR_Qt5Widgets 10005f28     Qt5Widgets:Qt5Widgets.dll
+ 0002:00001f3c       __IMPORT_DESCRIPTOR_Qt5Core 10005f3c     Qt5Core:Qt5Core.dll
+ 0002:00001f50       __IMPORT_DESCRIPTOR_KERNEL32 10005f50     kernel32:KERNEL32.dll
+ 0002:00001f64       __IMPORT_DESCRIPTOR_VCRUNTIME140 10005f64     vcruntime:VCRUNTIME140.dll
+ 0002:00001f78       __IMPORT_DESCRIPTOR_api-ms-win-crt-runtime-l1-1-0 10005f78     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00001f8c       __IMPORT_DESCRIPTOR_api-ms-win-crt-heap-l1-1-0 10005f8c     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:00001fa0       __NULL_IMPORT_DESCRIPTOR   10005fa0     TPBase:TPBase.dll
+ 0003:00000024       ?staticMetaObject@TPMainController@@2UQMetaObject@@B 10008024     moc_TPMainController.obj
+ 0003:000000e0       ?staticMetaObject@TPPlayController@@2UQMetaObject@@B 100080e0     moc_TPPlayController.obj
+ 0003:00000120       ?staticMetaObject@TPTopFrameController@@2UQMetaObject@@B 10008120     moc_TPTopFrameController.obj
+ 0003:00000138       ___security_cookie_complement 10008138     MSVCRT:gs_cookie.obj
+ 0003:0000013c       ___security_cookie         1000813c     MSVCRT:gs_cookie.obj
+ 0003:00000140       __fltused                  10008140     MSVCRT:fltused.obj
+ 0003:00000150       ___scrt_native_dllmain_reason 10008150     MSVCRT:utility.obj
+ 0003:00000154       ___isa_enabled             10008154     MSVCRT:cpu_disp.obj
+ 0003:00000158       ___scrt_ucrt_dll_is_in_use 10008158     MSVCRT:ucrt_stubs.obj
+ 0003:0000015c       ??_R0?AVITPCoreFramework@@@8 1000815c     TPPlayController.obj
+ 0003:0000017c       ??_R0?AVbad_alloc@std@@@8  1000817c     MSVCRT:throw_bad_alloc.obj
+ 0003:00000198       ??_R0?AVexception@std@@@8  10008198     MSVCRT:throw_bad_alloc.obj
+ 0003:000001b4       ??_R0?AVbad_array_new_length@std@@@8 100081b4     MSVCRT:throw_bad_alloc.obj
+ 0003:000001dc       ??_R0?AVTPMainController@@@8 100081dc     TPMainController.obj
+ 0003:000001fc       ??_R0?AVQObject@@@8        100081fc     TPMainController.obj
+ 0003:00000214       ??_R0?AVTPPlayWidget@@@8   10008214     TPPlayController.obj
+ 0003:00000230       ??_R0?AVQWidget@@@8        10008230     TPPlayController.obj
+ 0003:00000248       ??_R0?AVQPaintDevice@@@8   10008248     TPPlayController.obj
+ 0003:00000264       ??_R0?AVITPPlayController@@@8 10008264     TPPlayController.obj
+ 0003:00000284       ??_R0?AVTPPlayController@@@8 10008284     TPPlayController.obj
+ 0003:000002a4       ??_R0?AVITPTopFrameController@@@8 100082a4     TPTopFrameController.obj
+ 0003:000002c8       ??_R0?AVTPTopFrameWidget@@@8 100082c8     TPTopFrameController.obj
+ 0003:000002e8       ??_R0?AVTPTopFrameController@@@8 100082e8     TPTopFrameController.obj
+ 0003:0000030c       ??_R0?AVtype_info@@@8      1000830c     MSVCRT:std_type_info_static.obj
+ 0003:0000032c       ___castguard_check_failure_os_handled_fptr 1000832c     MSVCRT:guard_support.obj
+ 0003:00000650       ?__type_info_root_node@@3U__type_info_node@@A 10008650     MSVCRT:tncleanup.obj
+ 0003:00000658       ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 10008658     MSVCRT:default_local_stdio_options.obj
+ 0003:00000660       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 10008660     MSVCRT:default_local_stdio_options.obj
+ 0003:00000668       ___scrt_current_native_startup_state 10008668     MSVCRT:utility.obj
+ 0003:0000066c       ___scrt_native_startup_lock 1000866c     MSVCRT:utility.obj
+ 0003:0000068c       ___scrt_debugger_hook_flag 1000868c     MSVCRT:utility_desktop.obj
+ 0003:00000690       ___isa_available           10008690     MSVCRT:cpu_disp.obj
+ 0003:00000694       ___favor                   10008694     MSVCRT:cpu_disp.obj
+ 0003:00000698       ___dyn_tls_init_callback   10008698     <common>
+
+ entry point at        0001:0000159e
+
+ Static symbols
+
+ 0000:ffff5000       .debug$S                   10000000     TPController.exp
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Core:Qt5Core.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     Qt5Widgets:Qt5Widgets.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:ffff5000       .debug$S                   10000000     TPBase:TPBase.dll
+ 0000:ffff5000       .debug$S                   10000000     TPBase:TPBase.dll
+ 0000:ffff5000       .debug$S                   10000000     TPBase:TPBase.dll
+ 0000:ffff5000       .debug$S                   10000000     TPBase:TPBase.dll
+ 0000:ffff5000       .debug$S                   10000000     TPBase:TPBase.dll
+ 0000:ffff5000       .debug$S                   10000000     TPBase:TPBase.dll
+ 0000:ffff5000       .debug$S                   10000000     TPFramework:TPFramework.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0000:ffff5000       .debug$S                   10000000     TPUI:TPUI.dll
+ 0001:00000000       ??__E?staticMetaObject@TPMainController@@2UQMetaObject@@B@@YAXXZ 10001000 f   moc_TPMainController.obj
+ 0001:00000010       ??__E?staticMetaObject@TPPlayController@@2UQMetaObject@@B@@YAXXZ 10001010 f   moc_TPPlayController.obj
+ 0001:00000020       ??__E?staticMetaObject@TPTopFrameController@@2UQMetaObject@@B@@YAXXZ 10001020 f   moc_TPTopFrameController.obj
+ 0001:0000125e       ?dllmain_crt_dispatch@@YGHQAUHINSTANCE__@@KQAX@Z 1000225e f   MSVCRT:dll_dllmain.obj
+ 0001:000012b1       ?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 100022b1 f   MSVCRT:dll_dllmain.obj
+ 0001:000013b8       ?dllmain_crt_process_detach@@YAH_N@Z 100023b8 f   MSVCRT:dll_dllmain.obj
+ 0001:00001468       ?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10002468 f   MSVCRT:dll_dllmain.obj
+ 0001:00001573       ?dllmain_raw@@YGHQAUHINSTANCE__@@KQAX@Z 10002573 f   MSVCRT:dll_dllmain.obj
+ 0001:000015d0       $$000000                   100025d0     MSVCRT:sehprolg4.obj
+ 0001:00001887       ___get_entropy             10002887 f   MSVCRT:gs_support.obj
+ 0001:00001982       ?find_pe_section@@YAPAU_IMAGE_SECTION_HEADER@@QAEI@Z 10002982 f   MSVCRT:utility.obj
+ 0001:000020d0       __ehhandler$??_ETPMainController@@UAEPAXI@Z 100030d0 f   TPMainController.obj
+ 0001:000020d0       __ehhandler$??_ETPPlayController@@UAEPAXI@Z 100030d0 f   TPPlayController.obj
+ 0001:000020d0       __ehhandler$??_ETPTopFrameController@@UAEPAXI@Z 100030d0 f   TPTopFrameController.obj
+ 0001:000020f0       __unwindfunclet$?install@TPMainController@@QAEXXZ$0 100030f0 f   TPMainController.obj
+ 0001:000020ff       __unwindfunclet$?install@TPMainController@@QAEXXZ$1 100030ff f   TPMainController.obj
+ 0001:00002107       __unwindfunclet$?install@TPMainController@@QAEXXZ$2 10003107 f   TPMainController.obj
+ 0001:00002116       __unwindfunclet$?install@TPMainController@@QAEXXZ$3 10003116 f   TPMainController.obj
+ 0001:00002123       __ehhandler$?install@TPMainController@@QAEXXZ 10003123 f   TPMainController.obj
+ 0001:00002140       __unwindfunclet$??0?$InterfacePtr@VITPCoreFramework@@@@QAE@ABH@Z$0 10003140 f   TPPlayController.obj
+ 0001:0000214e       __ehhandler$??0?$InterfacePtr@VITPCoreFramework@@@@QAE@ABH@Z 1000314e f   TPPlayController.obj
+ 0001:00002170       __unwindfunclet$??C?$InterfacePtr@VITPCoreFramework@@@@QAEPAVITPCoreFramework@@XZ$0 10003170 f   TPPlayController.obj
+ 0001:0000218f       __ehhandler$??C?$InterfacePtr@VITPCoreFramework@@@@QAEPAVITPCoreFramework@@XZ 1000318f f   TPPlayController.obj
+ 0001:000021c0       __unwindfunclet$?initController@TPPlayController@@UAEXXZ$0 100031c0 f   TPPlayController.obj
+ 0001:000021d4       __ehhandler$?initController@TPPlayController@@UAEXXZ 100031d4 f   TPPlayController.obj
+ 0001:00002200       __unwindfunclet$?sltOpenFile@TPPlayController@@QAEXXZ$0 10003200 f   TPPlayController.obj
+ 0001:00002209       __unwindfunclet$?sltOpenFile@TPPlayController@@QAEXXZ$1 10003209 f   TPPlayController.obj
+ 0001:00002212       __unwindfunclet$?sltOpenFile@TPPlayController@@QAEXXZ$2 10003212 f   TPPlayController.obj
+ 0001:0000221b       __unwindfunclet$?sltOpenFile@TPPlayController@@QAEXXZ$3 1000321b f   TPPlayController.obj
+ 0001:00002229       __ehhandler$?sltOpenFile@TPPlayController@@QAEXXZ 10003229 f   TPPlayController.obj
+ 0001:00002250       __unwindfunclet$?initController@TPTopFrameController@@UAEXXZ$1 10003250 f   TPTopFrameController.obj
+ 0001:00002259       __unwindfunclet$?initController@TPTopFrameController@@UAEXXZ$2 10003259 f   TPTopFrameController.obj
+ 0001:00002273       __unwindfunclet$?initController@TPTopFrameController@@UAEXXZ$0 10003273 f   TPTopFrameController.obj
+ 0001:00002287       __ehhandler$?initController@TPTopFrameController@@UAEXXZ 10003287 f   TPTopFrameController.obj
+ 0002:00000230       ??staticMetaObject$initializer$@TPMainController@@2P6AXXZA@@3P6AXXZA 10004230     moc_TPMainController.obj
+ 0002:00000234       ??staticMetaObject$initializer$@TPPlayController@@2P6AXXZA@@3P6AXXZA 10004234     moc_TPPlayController.obj
+ 0002:00000238       ??staticMetaObject$initializer$@TPTopFrameController@@2P6AXXZA@@3P6AXXZA 10004238     moc_TPTopFrameController.obj
+ 0002:00000258       ?_Fake_alloc@std@@3U_Fake_allocator@1@B 10004258     TPMainController.obj
+ 0002:000002d6       ?_Fake_alloc@std@@3U_Fake_allocator@1@B 100042d6     TPPlayController.obj
+ 0002:0000054b       ?_Fake_alloc@std@@3U_Fake_allocator@1@B 1000454b     TPTopFrameController.obj
+ 0002:000006a8       ?_Fake_alloc@std@@3U_Fake_allocator@1@B 100046a8     moc_TPMainController.obj
+ 0002:000006ac       ?qt_meta_data_TPMainController@@3QBIB 100046ac     moc_TPMainController.obj
+ 0002:000006e8       ?_Fake_alloc@std@@3U_Fake_allocator@1@B 100046e8     moc_TPPlayController.obj
+ 0002:000006f0       ?qt_meta_data_TPPlayController@@3QBIB 100046f0     moc_TPPlayController.obj
+ 0002:00000790       ?_Fake_alloc@std@@3U_Fake_allocator@1@B 10004790     moc_TPTopFrameController.obj
+ 0002:00000794       ?qt_meta_data_TPTopFrameController@@3QBIB 10004794     moc_TPTopFrameController.obj
+ 0002:00000854       _GS_ExceptionPointers      10004854     MSVCRT:gs_report.obj
+ 0002:00001198       __unwindtable$?install@TPMainController@@QAEXXZ 10005198     TPMainController.obj
+ 0002:000011b8       __ehfuncinfo$?install@TPMainController@@QAEXXZ 100051b8     TPMainController.obj
+ 0002:000011dc       __ehfuncinfo$??_ETPMainController@@UAEPAXI@Z 100051dc     TPMainController.obj
+ 0002:000011dc       __ehfuncinfo$??_ETPPlayController@@UAEPAXI@Z 100051dc     TPPlayController.obj
+ 0002:000011dc       __ehfuncinfo$??_ETPTopFrameController@@UAEPAXI@Z 100051dc     TPTopFrameController.obj
+ 0002:00001200       __unwindtable$?initController@TPPlayController@@UAEXXZ 10005200     TPPlayController.obj
+ 0002:00001208       __ehfuncinfo$?initController@TPPlayController@@UAEXXZ 10005208     TPPlayController.obj
+ 0002:0000122c       __ehfuncinfo$?sltOpenFile@TPPlayController@@QAEXXZ 1000522c     TPPlayController.obj
+ 0002:00001250       __unwindtable$?sltOpenFile@TPPlayController@@QAEXXZ 10005250     TPPlayController.obj
+ 0002:00001288       __unwindtable$??0?$InterfacePtr@VITPCoreFramework@@@@QAE@ABH@Z 10005288     TPPlayController.obj
+ 0002:00001290       __ehfuncinfo$??0?$InterfacePtr@VITPCoreFramework@@@@QAE@ABH@Z 10005290     TPPlayController.obj
+ 0002:000012b4       __unwindtable$??C?$InterfacePtr@VITPCoreFramework@@@@QAEPAVITPCoreFramework@@XZ 100052b4     TPPlayController.obj
+ 0002:000012bc       __ehfuncinfo$??C?$InterfacePtr@VITPCoreFramework@@@@QAEPAVITPCoreFramework@@XZ 100052bc     TPPlayController.obj
+ 0002:000012e0       __unwindtable$?initController@TPTopFrameController@@UAEXXZ 100052e0     TPTopFrameController.obj
+ 0002:000012f8       __ehfuncinfo$?initController@TPTopFrameController@@UAEXXZ 100052f8     TPTopFrameController.obj
+ 0002:00001320       __sehtable$??_M@YGXPAXIIP6EX0@Z@Z 10005320     MSVCRT:ehvecdtr.obj
+ 0002:00001340       __sehtable$?__ArrayUnwind@@YGXPAXIIP6EX0@Z@Z 10005340     MSVCRT:ehvecdtr.obj
+ 0002:00001360       __sehtable$?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 10005360     MSVCRT:dll_dllmain.obj
+ 0002:00001380       __sehtable$?dllmain_crt_process_detach@@YAH_N@Z 10005380     MSVCRT:dll_dllmain.obj
+ 0002:000013a8       __sehtable$?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 100053a8     MSVCRT:dll_dllmain.obj
+ 0002:00001458       __sehtable$___scrt_is_nonwritable_in_current_image 10005458     MSVCRT:utility.obj
+ 0002:00001480       .edata                     10005480     TPController.exp
+ 0002:000014a8       rgpv                       100054a8     TPController.exp
+ 0002:00001560       rgszName                   10005560     TPController.exp
+ 0002:00001618       rgwOrd                     10005618     TPController.exp
+ 0002:00001674       szName                     10005674     TPController.exp
+ 0002:00001685       $N00001                    10005685     TPController.exp
+ 0002:000016ad       $N00002                    100056ad     TPController.exp
+ 0002:000016d5       $N00003                    100056d5     TPController.exp
+ 0002:00001701       $N00004                    10005701     TPController.exp
+ 0002:0000171d       $N00005                    1000571d     TPController.exp
+ 0002:00001739       $N00006                    10005739     TPController.exp
+ 0002:00001759       $N00007                    10005759     TPController.exp
+ 0002:00001773       $N00008                    10005773     TPController.exp
+ 0002:0000178d       $N00009                    1000578d     TPController.exp
+ 0002:000017b0       $N00010                    100057b0     TPController.exp
+ 0002:000017d8       $N00011                    100057d8     TPController.exp
+ 0002:0000180d       $N00012                    1000580d     TPController.exp
+ 0002:00001834       $N00013                    10005834     TPController.exp
+ 0002:00001851       $N00014                    10005851     TPController.exp
+ 0002:0000186e       $N00015                    1000586e     TPController.exp
+ 0002:0000188f       $N00016                    1000588f     TPController.exp
+ 0002:000018be       $N00017                    100058be     TPController.exp
+ 0002:000018f1       $N00018                    100058f1     TPController.exp
+ 0002:00001927       $N00019                    10005927     TPController.exp
+ 0002:00001956       $N00020                    10005956     TPController.exp
+ 0002:0000197f       $N00021                    1000597f     TPController.exp
+ 0002:000019ac       $N00022                    100059ac     TPController.exp
+ 0002:000019ce       $N00023                    100059ce     TPController.exp
+ 0002:00001a02       $N00024                    10005a02     TPController.exp
+ 0002:00001a36       $N00025                    10005a36     TPController.exp
+ 0002:00001a6e       $N00026                    10005a6e     TPController.exp
+ 0002:00001aae       $N00027                    10005aae     TPController.exp
+ 0002:00001aee       $N00028                    10005aee     TPController.exp
+ 0002:00001b32       $N00029                    10005b32     TPController.exp
+ 0002:00001b5d       $N00030                    10005b5d     TPController.exp
+ 0002:00001b88       $N00031                    10005b88     TPController.exp
+ 0002:00001bb7       $N00032                    10005bb7     TPController.exp
+ 0002:00001c09       $N00033                    10005c09     TPController.exp
+ 0002:00001c5b       $N00034                    10005c5b     TPController.exp
+ 0002:00001cb1       $N00035                    10005cb1     TPController.exp
+ 0002:00001cd7       $N00036                    10005cd7     TPController.exp
+ 0002:00001d00       $N00037                    10005d00     TPController.exp
+ 0002:00001d2b       $N00038                    10005d2b     TPController.exp
+ 0002:00001d60       $N00039                    10005d60     TPController.exp
+ 0002:00001d95       $N00040                    10005d95     TPController.exp
+ 0002:00001dce       $N00041                    10005dce     TPController.exp
+ 0002:00001dfa       $N00042                    10005dfa     TPController.exp
+ 0002:00001e26       $N00043                    10005e26     TPController.exp
+ 0002:00001e56       $N00044                    10005e56     TPController.exp
+ 0002:00001e86       $N00045                    10005e86     TPController.exp
+ 0002:00001eb6       $N00046                    10005eb6     TPController.exp
+ 0002:00002314       .idata$6                   10006314     TPBase:TPBase.dll
+ 0002:00002672       .idata$6                   10006672     TPUI:TPUI.dll
+ 0002:000026a6       .idata$6                   100066a6     TPFramework:TPFramework.dll
+ 0002:00002fc6       .idata$6                   10006fc6     Qt5Widgets:Qt5Widgets.dll
+ 0002:0000335e       .idata$6                   1000735e     Qt5Core:Qt5Core.dll
+ 0002:0000348e       .idata$6                   1000748e     kernel32:KERNEL32.dll
+ 0002:00003590       .idata$6                   10007590     vcruntime:VCRUNTIME140.dll
+ 0002:00003672       .idata$6                   10007672     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00003694       .idata$6                   10007694     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0003:00000000       ?qt_meta_stringdata_TPMainController@@3Uqt_meta_stringdata_TPMainController_t@@B 10008000     moc_TPMainController.obj
+ 0003:0000003c       ?qt_meta_stringdata_TPPlayController@@3Uqt_meta_stringdata_TPPlayController_t@@B 1000803c     moc_TPPlayController.obj
+ 0003:000000f8       ?qt_meta_stringdata_TPTopFrameController@@3Uqt_meta_stringdata_TPTopFrameController_t@@B 100080f8     moc_TPTopFrameController.obj
+ 0003:00000328       ?__proc_attached@@3HA      10008328     MSVCRT:dll_dllmain.obj
+ 0003:00000330       _GS_ExceptionRecord        10008330     MSVCRT:gs_report.obj
+ 0003:00000380       _GS_ContextRecord          10008380     MSVCRT:gs_report.obj
+ 0003:00000670       ?is_initialized_as_dll@@3_NA 10008670     MSVCRT:utility.obj
+ 0003:00000671       ?module_local_atexit_table_initialized@@3_NA 10008671     MSVCRT:utility.obj
+ 0003:00000674       ?module_local_atexit_table@@3U_onexit_table_t@@A 10008674     MSVCRT:utility.obj
+ 0003:00000680       ?module_local_at_quick_exit_table@@3U_onexit_table_t@@A 10008680     MSVCRT:utility.obj
+ 0004:00000060       $R000000                   10009060     * linker generated manifest res *

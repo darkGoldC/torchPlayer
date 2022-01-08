@@ -10,7 +10,7 @@ DEFINES += QT_DEPRECATED_WARNINGS TPCORESHARED_LIBRARY
 DEFINES += QT_DLL QT_OPENGL_LIB QT_OPENGLEXTENSIONS_LIB QT_WIDGETS_LIB QT_MULTIMEDIA_LIB
 
 INCLUDEPATH += $$PWD/../Interface \
-                $$PWD/../ThirdInclude
+                $$PWD/../ThirdInclude/ffmpeg
 
 win32:{
        CONFIG(debug, debug|release){
@@ -23,6 +23,13 @@ win32:{
         QMAKE_LFLAGS_RELEASE += /MAP
         QMAKE_CFLAGS_RELEASE += /Zi
         QMAKE_LFLAGS_RELEASE += /debug /opt:ref
+
+        CONFIG(debug, debug){
+            LIBS += -L$$PWD/../bin/$$PlatformFolder/ThirdLib/ffmpeg/Debug
+        }
+        else{
+            LIBS += -L$$PWD/../bin/$$PlatformFolder/ThirdLib/ffmpeg/Release
+        }
  }
 
 unix:!macx:{
@@ -41,7 +48,8 @@ DESTDIR = $$PWD/../bin/$$PlatformFolder
 LIBS += -L$$PWD/../bin/$$PlatformFolder/ -lTPBase -lopengl32 \
     -lglu32
 
-LIBS += -L$$PWD/../bin/$$PlatformFolder/ThirdLib -lavformat -lavutil -lavcodec -lswresample
+
+LIBS += -L$$PWD/../bin/$$PlatformFolder/ThirdLib/ffmpeg -lavformat -lavutil -lavcodec -lswresample
 
 HEADERS += \
     TPAudioDevice.h \

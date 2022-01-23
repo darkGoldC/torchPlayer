@@ -7,11 +7,6 @@ TPFFmpegDemuxer::TPFFmpegDemuxer()
     insertClassName("TPFFmpegDemuxer", RegisterTPFFmpegDemuxer::instance());
 }
 
-bool TPFFmpegDemuxer::open(const std::string)
-{
-    return true;
-}
-
 bool TPFFmpegDemuxer::init()
 {
     bool bRet = false;

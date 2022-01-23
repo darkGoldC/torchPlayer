@@ -9,7 +9,6 @@ public:
     REGISTER(TPFFmpegDemuxer)
 
     TPFFmpegDemuxer();
-    bool    open(const std::string) override;
     bool    init() override;
     bool    demux() override;
 };

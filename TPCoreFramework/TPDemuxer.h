@@ -9,7 +9,7 @@
 class  TPDemuxer : public ITPDemuxer
 {
 public:
-    bool    open(const std::string strUrl);
+    bool    open(const std::string strUrl) override;
     bool    control(const int nQuery) override;
 
 private:

@@ -606,7 +606,7 @@ _initdir (DIR *dirp)
 
 # if defined(DIRENT_WIN32_INTERFACE)
   /* Open stream and retrieve first file */
-  dirp->search_handle = FindFirstFile (dirp->dirname, &dirp->current.data);
+  //dirp->search_handle = FindFirstFile (dirp->dirname, &dirp->current.data);
   if (dirp->search_handle == INVALID_HANDLE_VALUE) {
     /* something went wrong but we don't know what.  GetLastError() could
      * give us more information about the error, but then we should map
@@ -640,7 +640,7 @@ static const char *
 _getdirname (const struct dirent *dp)
 {
 #if defined(DIRENT_WIN32_INTERFACE)
-  return dp->data.cFileName;
+  return "";
   
 #elif defined(DIRENT_USE_FFBLK)
   return dp->data.ff_name;

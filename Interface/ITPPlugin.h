@@ -41,6 +41,8 @@ public:
     }
 };
 
+extern void Q_DECL_EXPORT insertClassName(std::string strName, ITPPlugin *pPlugin);
+
 void insertClassName(std::string strName, ITPPlugin *pPlugin)
 {
     TPSingleton::instance<plugin_map>().insert(std::make_pair(strName, pPlugin));

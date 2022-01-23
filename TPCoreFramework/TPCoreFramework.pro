@@ -10,6 +10,7 @@ DEFINES += QT_DEPRECATED_WARNINGS TPCORESHARED_LIBRARY
 DEFINES += QT_DLL QT_OPENGL_LIB QT_OPENGLEXTENSIONS_LIB QT_WIDGETS_LIB QT_MULTIMEDIA_LIB
 
 INCLUDEPATH += $$PWD/../Interface \
+                $$PWD/../TPBase \
                 $$PWD/../ThirdInclude/ffmpeg
 
 win32:{
@@ -53,26 +54,28 @@ LIBS += -L$$PWD/../bin/$$PlatformFolder/ThirdLib/ffmpeg -lavformat -lavutil -lav
 
 HEADERS += \
     TPAudioDevice.h \
-    TPAudioThread.h \
-    TPComDecodeThread.h \
+    TPAudioOuput.h \
     TPCoreFramework.h \
     TPDecoder.h \
-    TPDemuxThread.h \
     TPDemuxer.h \
+    TPEsOut.h \
+    TPInputManager.h \
     TPMuxer.h \
+    TPPluginsManager.h \
     TPResampler.h \
-    TPVideoThread.h \
+    TPVideoOutput.h \
     TPVideoWidget.h
 
 SOURCES += \
     TPAudioDevice.cpp \
-    TPAudioThread.cpp \
-    TPComDecodeThread.cpp \
+    TPAudioOuput.cpp \
     TPCoreFramework.cpp \
     TPDecoder.cpp \
-    TPDemuxThread.cpp \
     TPDemuxer.cpp \
+    TPEsOut.cpp \
+    TPInputManager.cpp \
     TPMuxer.cpp \
+    TPPluginsManager.cpp \
     TPResampler.cpp \
-    TPVideoThread.cpp \
+    TPVideoOutput.cpp \
     TPVideoWidget.cpp

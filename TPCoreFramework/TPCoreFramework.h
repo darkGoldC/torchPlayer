@@ -3,10 +3,8 @@
 
 #include <QObject>
 #include "TP_CoreDefine.h"
-#include "TPAudioThread.h"
-#include "TPVideoThread.h"
 #include "ITPCoreFramework.h"
-#include "TPDemuxThread.h"
+
 
 class TPCORESHARED_EXPORT TPCoreFramework : public QObject, public ITPCoreFramework
 {
@@ -24,7 +22,7 @@ public:
 signals:
 
 private:
-    TPDemuxThread   m_demuxThread;
+
 };
 
 #endif // TPCOREFRAMEWORK_H

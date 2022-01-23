@@ -1,6 +1,7 @@
 ﻿#include "TPApplication.h"
 #include "ITPTopFrameController.h"
 #include "TPCoreFramework.h"
+#include "TPPluginsManager.h"
 bool TPApplication::notify(QObject *reciver, QEvent *e)
 {
     return QApplication::notify(reciver, e);
@@ -21,7 +22,7 @@ void TPApplication::initUI()
 {
     InterfacePtr<ITPTopFrameController> topFrameController;
     topFrameController->initController();
-    topFrameController->getTopWidget()->show();
+    //topFrameController->getTopWidget()->show();
 }
 
 void TPApplication::initCore()
@@ -31,4 +32,8 @@ void TPApplication::initCore()
     InterfacePtr<ITPCoreFramework> coreFramework;
     coreFramework->initWork();
     coreFramework->startWork();
+
+    //插件初始化
+    InterfacePtr<ITPPluginsManager> pluginsManager;
+    pluginsManager->loadAllPlugins("");
 }

@@ -1,4 +1,6 @@
 ﻿#pragma once
+#include "ITPDecoder.h"
+
 struct AVCodecParameters;
 struct AVCodecContext;
 struct AVFrame;

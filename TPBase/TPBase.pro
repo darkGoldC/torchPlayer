@@ -11,6 +11,7 @@ INCLUDEPATH +=   $$PWD/../Interface \
                 $$PWD/../TPBase
 
 HEADERS += \
+    ../Interface/BlockDataQueue.h \
     ../Interface/TPCommonDefine.h \
     ../Interface/TPCommonUtils.h \
     ../Interface/TPGlobalInfoMgr.h \
@@ -19,9 +20,12 @@ HEADERS += \
     ../Interface/TPNanoLog.h \
     ../Interface/TPObjectMgr.h \
     $$PWD/TP_BaseDefine.h \
-    ../Interface/TP_ControllerDefine.h
+    ../Interface/TP_ControllerDefine.h \
+    ../Interface/BlockData.h
 
 SOURCES += \
+    BlockData.cpp \
+    BlockDataQueue.cpp \
     TPCommonUtils.cpp \
     TPGlobalInfoMgr.cpp \
     TPLog.cpp \

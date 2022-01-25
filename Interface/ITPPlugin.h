@@ -11,28 +11,22 @@ enum Plugin_Type
     PPlugin_Type_unkonw,
 };
 
-class ITPPlugin
-{
-public:
-    //ITPPlugin(void *pHandle):nLibHandle(pHandle){}
+#define DECLARE_CLASS(ClassName)\
+static TPRegisterPlugin* ClassName::m_className##dc;
 
-    virtual bool            load() = 0;
-    virtual bool            unload() = 0;
 
-    std::string strPluginName;
-    Plugin_Type pluginType = PPlugin_Type_unkonw;
-    int         nScoreProperty = 0;
-    void        *nLibHandle = nullptr;
-    void        *loadFunc = nullptr;
-};
+#define IMPLEMENT_CLASS(ClassName)  \
+TPRegisterPlugin* ClassName::m_className##dc = \
+new TPRegisterPlugin(#ClassName, ClassName::instance) ;
+
+class ITPPlugin;
 
 typedef std::map<std::string, ITPPlugin *> plugin_map;
+typedef std::function<ITPPlugin * ()>             createFunc;
 
 class TPSingleton
 {
-
 public:
-
     template<class T>
     static T& instance()
     {
@@ -41,12 +35,15 @@ public:
     }
 };
 
-extern void Q_DECL_EXPORT insertClassName(std::string strName, ITPPlugin *pPlugin);
-
-void insertClassName(std::string strName, ITPPlugin *pPlugin)
+class TPRegisterPlugin
 {
-    TPSingleton::instance<plugin_map>().insert(std::make_pair(strName, pPlugin));
-}
+public:
+    TPRegisterPlugin(const std::string &strName, createFunc func)
+    {
+        TPSingleton::instance<plugin_map>().insert(std::make_pair(strName, func()));
+    }
+};
+
 
 #define LOAD_PLUGIN(ClassName)   \
     bool            load() override \
@@ -61,16 +58,27 @@ void insertClassName(std::string strName, ITPPlugin *pPlugin)
     }
 
 #define REGISTER(ClassName) \
-    class Register##ClassName \
+    static ITPPlugin* instance() \
     { \
-    public: \
-        static ITPPlugin* instance() \
-        { \
-            return new ClassName; \
-        } \
-    private: \
-    }; \
+        return new ClassName; \
+    } \
     LOAD_PLUGIN(ClassName)\
     UNLOAD_PLUGIN(ClassName)
+
+
+class ITPPlugin
+{
+public:
+    //ITPPlugin(void *pHandle):nLibHandle(pHandle){}
+
+    virtual bool            load() = 0;
+    virtual bool            unload() = 0;
+
+    std::string strPluginName;
+    Plugin_Type pluginType = PPlugin_Type_unkonw;
+    int         nScoreProperty = 0;
+    void        *nLibHandle = nullptr;
+    void        *loadFunc = nullptr;
+};
 
 #endif

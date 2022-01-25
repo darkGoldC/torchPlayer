@@ -6,7 +6,7 @@
 #include "TPEsOut.h"
 #include "TP_CoreDefine.h"
 
-class  TPDemuxer : public ITPDemuxer
+class  TPCORESHARED_EXPORT TPDemuxer : public ITPDemuxer
 {
 public:
     bool    open(const std::string strUrl) override;

@@ -4,7 +4,7 @@
 
 TPFFmpegDemuxer::TPFFmpegDemuxer()
 {
-    insertClassName("TPFFmpegDemuxer", RegisterTPFFmpegDemuxer::instance());
+
 }
 
 bool TPFFmpegDemuxer::init()

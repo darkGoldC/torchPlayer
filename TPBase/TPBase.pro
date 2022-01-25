@@ -8,7 +8,7 @@ DEFINES += QT_MESSAGELOGCONTEXT
 DEFINES += QT_DEPRECATED_WARNINGS TPBASESHARED_LIBRARY
 
 INCLUDEPATH +=   $$PWD/../Interface \
-                $$PWD/../TPBase
+                $$PWD/
 
 HEADERS += \
     ../Interface/BlockDataQueue.h \
@@ -19,7 +19,6 @@ HEADERS += \
     ../Interface/TPLog.h \
     ../Interface/TPNanoLog.h \
     ../Interface/TPObjectMgr.h \
-    $$PWD/TP_BaseDefine.h \
     ../Interface/TP_ControllerDefine.h \
     ../Interface/BlockData.h
 

@@ -33,4 +33,6 @@ unix:!macx:{
     }
     PlatformFolder = Linux
 }
-DESTDIR = $$PWD/../bin/$$PlatformFolder
+
+LIBS += -L$$PWD/../../bin/$$PlatformFolder/ -lTPBase -lTPFramework
+DESTDIR = $$PWD/../../bin/$$PlatformFolder

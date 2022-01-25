@@ -5,6 +5,8 @@
 
 class TPFFmpegDemuxer : public ITPPlugin, public TPDemuxer
 {
+private:
+    DECLARE_CLASS(TPFFmpegDemuxer)
 public:
     REGISTER(TPFFmpegDemuxer)
 
@@ -13,5 +15,6 @@ public:
     bool    demux() override;
 };
 
+IMPLEMENT_CLASS(TPFFmpegDemuxer)
 
 #endif // TPFFMPEGDEMUXER_H

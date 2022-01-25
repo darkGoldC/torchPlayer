@@ -8,8 +8,8 @@ SUBDIRS += \
         Decode \
         videoOuput \
 
-DESTDIR = $$PWD/../bin/$$PlatformFolder
+
 
 CONFIG += ordered
 
-LIBS += -L$$PWD/../bin/$$PlatformFolder/ -lTPBase -lTPFramework
+

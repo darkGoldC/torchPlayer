@@ -9,8 +9,10 @@ SUBDIRS += \
         TPData \
         TPUI \
         TPController \
+        TPPlugins \
         TPMain \
-        TPPlugins
+
 
 
 CONFIG += ordered C++11
+

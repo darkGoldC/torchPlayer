@@ -20,7 +20,8 @@ HEADERS += \
     ../Interface/TPNanoLog.h \
     ../Interface/TPObjectMgr.h \
     ../Interface/TP_ControllerDefine.h \
-    ../Interface/BlockData.h
+    ../Interface/BlockData.h    \
+    ../Interface/TPInputClock.h
 
 SOURCES += \
     BlockData.cpp \
@@ -30,6 +31,7 @@ SOURCES += \
     TPLog.cpp \
     TPNanoLog.cpp \
     TPObjectMgr.cpp \
+    TPInputClock.cpp
 
 win32:{
        CONFIG(debug, debug|release){

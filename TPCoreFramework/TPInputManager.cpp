@@ -14,7 +14,7 @@ void TPInputManager::start(const std::string strUrl)
         ITPDemuxer *pDemuxer =  dynamic_cast<ITPDemuxer *>(pluginsManager->getInstance("TPFFmpegDemuxer"));
         if(pDemuxer)
         {
-            //m_pDemuxer = std::make_shared<ITPDemuxer>(pDemuxer);
+            m_pDemuxer.reset(pDemuxer);
             m_pDemuxer->open(strUrl);
         }
     }
@@ -25,5 +25,8 @@ void TPInputManager::start(const std::string strUrl)
 
 void TPInputManager::inputThread()
 {
+    while(true)
+    {
 
+    }
 }

@@ -26,4 +26,8 @@
 #define qTPWarningScope(no)     NANOSCOPE_LOG(no##1, TPNanolog::LogLevel::WARN, true) << "begin"; \
                             NANOSCOPE_LOG(no##2, TPNanolog::LogLevel::WARN, false) << "end"
 
+#define INVALID 0
+
+typedef long long nTime_t;
+
 #endif // TPCOMMONDEFINE_H

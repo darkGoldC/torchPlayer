@@ -5,11 +5,11 @@
 #include <list>
 #include <map>
 #include <QObject>
-
+#include "TP_CoreDefine.h"
 
 //可以通过宏命令控制new出类，然后将类实例放到工厂类的静态成员变量map中，之后遍历动态库后，从map中取出对应的实例
 
-class TPPluginsManager : public QObject, public ITPPluginsManager
+class TPCORESHARED_EXPORT TPPluginsManager : public QObject, public ITPPluginsManager
 {
     Q_OBJECT
 public:

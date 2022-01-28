@@ -4,7 +4,7 @@
 #include <QObject>
 #include "TP_CoreDefine.h"
 #include "ITPCoreFramework.h"
-
+#include "TPInputManager.h"
 
 class TPCORESHARED_EXPORT TPCoreFramework : public QObject, public ITPCoreFramework
 {
@@ -22,7 +22,7 @@ public:
 signals:
 
 private:
-
+    std::shared_ptr<TPInputManager> m_pInputManager;
 };
 
 #endif // TPCOREFRAMEWORK_H

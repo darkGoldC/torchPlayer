@@ -34,6 +34,7 @@ void TPApplication::initCore()
     coreFramework->startWork();
 
     //插件初始化
+    TP_ADDOBJECT_CLASS(ITPPluginsManager, TPPluginsManager);
     InterfacePtr<ITPPluginsManager> pluginsManager;
     pluginsManager->loadAllPlugins("");
 }

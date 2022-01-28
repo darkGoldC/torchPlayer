@@ -1,4 +1,5 @@
 QT       += widgets xml gui network multimedia multimediawidgets concurrent sql
+CONFIG += c++17
 
 TEMPLATE = lib
 TARGET = TPData
@@ -38,7 +39,11 @@ DESTDIR = $$PWD/../bin/$$PlatformFolder
 LIBS += -L$$PWD/../bin/$$PlatformFolder/ -lTPBase
 
 HEADERS += \
-    TPPlaylistMgr.h
+    TPDataMain.h \
+    TPPlaylistMgr.h \
+    TPValueMgr.h
 
 SOURCES += \
-    TPPlaylistMgr.cpp
+    TPDataMain.cpp \
+    TPPlaylistMgr.cpp \
+    TPValueMgr.cpp

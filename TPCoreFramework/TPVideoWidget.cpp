@@ -136,7 +136,7 @@ void TPVideoWidget::Init(int width, int height)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	//创建材质显卡空间
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, width, height, 0, GL_RED, GL_UNSIGNED_BYTE, 0);
+     glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_NV, width, height, 0, GL_RED_NV, GL_UNSIGNED_BYTE, 0);
 
 	//U
 	glBindTexture(GL_TEXTURE_2D, m_texs[1]);
@@ -144,7 +144,7 @@ void TPVideoWidget::Init(int width, int height)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	//创建材质显卡空间
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, width / 2, height / 2, 0, GL_RED, GL_UNSIGNED_BYTE, 0);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_NV, width / 2, height / 2, 0, GL_RED_NV, GL_UNSIGNED_BYTE, 0);
 
 	//V
 	glBindTexture(GL_TEXTURE_2D, m_texs[2]);
@@ -152,7 +152,7 @@ void TPVideoWidget::Init(int width, int height)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	//创建材质显卡空间
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, width / 2, height / 2, 0, GL_RED, GL_UNSIGNED_BYTE, 0);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_NV, width / 2, height / 2, 0, GL_RED_NV, GL_UNSIGNED_BYTE, 0);
 
 
 	m_videoMux.unlock();
@@ -244,7 +244,7 @@ void TPVideoWidget::paintGL()
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, m_texs[0]); //0层绑定到Y材质
 										   //修改材质内容(复制内存内容)
-	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, m_width, m_height, GL_RED, GL_UNSIGNED_BYTE, m_datas[0]);
+        //glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, m_width, m_height, GL_RED, GL_UNSIGNED_BYTE, m_datas[0]);
 	//与shader uni遍历关联
 	glUniform1i(m_unis[0], 0);
 
@@ -252,7 +252,7 @@ void TPVideoWidget::paintGL()
 	glActiveTexture(GL_TEXTURE0 + 1);
 	glBindTexture(GL_TEXTURE_2D, m_texs[1]); //1层绑定到U材质
 										   //修改材质内容(复制内存内容)
-	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, m_width / 2, m_height / 2, GL_RED, GL_UNSIGNED_BYTE, m_datas[1]);
+        //glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, m_width / 2, m_height / 2, GL_RED, GL_UNSIGNED_BYTE, m_datas[1]);
 	//与shader uni遍历关联
 	glUniform1i(m_unis[1], 1);
 
@@ -260,7 +260,7 @@ void TPVideoWidget::paintGL()
 	glActiveTexture(GL_TEXTURE0 + 2);
 	glBindTexture(GL_TEXTURE_2D, m_texs[2]); //2层绑定到V材质
 										   //修改材质内容(复制内存内容)
-	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, m_width / 2, m_height / 2, GL_RED, GL_UNSIGNED_BYTE, m_datas[2]);
+        //glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, m_width / 2, m_height / 2, GL_RED, GL_UNSIGNED_BYTE, m_datas[2]);
 	//与shader uni遍历关联
 	glUniform1i(m_unis[2], 2);
 

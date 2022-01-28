@@ -8,28 +8,39 @@ DEFINES += QT_MESSAGELOGCONTEXT
 DEFINES += QT_DEPRECATED_WARNINGS TPBASESHARED_LIBRARY
 
 INCLUDEPATH +=   $$PWD/../Interface \
+                $$PWD/../Interface/TPEventNotify \
                 $$PWD/
 
 HEADERS += \
     ../Interface/BlockDataQueue.h \
     ../Interface/TPCommonDefine.h \
     ../Interface/TPCommonUtils.h \
+    ../Interface/TPEventNotify/TPBaseEvent.h \
+    ../Interface/TPEventNotify/TPEventHeader.h \
+    ../Interface/TPEventNotify/TPEventNotifyMgr.h \
+    ../Interface/TPEventNotify/TPSignalDefCommon.h \
     ../Interface/TPGlobalInfoMgr.h \
     ../Interface/TPInterfacePtr.h \
     ../Interface/TPLog.h \
     ../Interface/TPNanoLog.h \
     ../Interface/TPObjectMgr.h \
     ../Interface/TP_ControllerDefine.h \
-    ../Interface/BlockData.h
+    ../Interface/BlockData.h    \
+    ../Interface/TPInputClock.h
 
 SOURCES += \
     BlockData.cpp \
     BlockDataQueue.cpp \
     TPCommonUtils.cpp \
+    TPEventNotify/TPBaseEvent.cpp \
+    TPEventNotify/TPEventHeader.cpp \
+    TPEventNotify/TPEventNotifyMgr.cpp \
+    TPEventNotify/TPSignalDefCommon.cpp \
     TPGlobalInfoMgr.cpp \
     TPLog.cpp \
     TPNanoLog.cpp \
     TPObjectMgr.cpp \
+    TPInputClock.cpp
 
 win32:{
        CONFIG(debug, debug|release){

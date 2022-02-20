@@ -1,5 +1,6 @@
-﻿#include "TPInputClock.h"
+#include "TPInputClock.h"
 #include <thread>
+#include "TPCommonDefine.h"
 TPInputClock::TPInputClock(const int nRate)
     :m_nRate(nRate)
 {

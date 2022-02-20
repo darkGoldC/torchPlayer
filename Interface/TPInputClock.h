@@ -1,4 +1,4 @@
-﻿#ifndef TPINPUTCLOCK_H
+#ifndef TPINPUTCLOCK_H
 #define TPINPUTCLOCK_H
 #include <iostream>
 #include <mutex>
@@ -45,7 +45,7 @@ typedef struct
 class TPInputClock
 {
 public:
-    TPInputClock(const int m_nRate);
+    TPInputClock(const int nRate);
 
     nTime_t getWakeup();
     //将流时间转化为真正的系统时间
@@ -93,7 +93,6 @@ private:
     int             m_nRate;
     nTime_t         m_nPtsDelay   = INVALID;
     nTime_t         m_nPauseDate  = INVALID;
-
 };
 
 #endif // TPINPUTCLOCK_H

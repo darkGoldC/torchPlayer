@@ -27,14 +27,9 @@
                             NANOSCOPE_LOG(no##2, TPNanolog::LogLevel::WARN, false) << "end"
 
 #define INVALID 0
-//时间
-#define CLOCK_FREQ 1000000L
-#define CR_MAX_GAP (60 * CLOCK_FREQ)
-#define CR_MEAN_PTS_GAP (300000)
-#define CR_BUFFERING_RATE (48)
-#define CR_BUFFERING_TARGET (100000)
 
-//math
+typedef long long nTime_t;
+
 #ifndef __MAX
 #   define __MAX(a, b)   ( ((a) > (b)) ? (a) : (b) )
 #endif
@@ -42,6 +37,13 @@
 #   define __MIN(a, b)   ( ((a) < (b)) ? (a) : (b) )
 #endif
 
-typedef long long nTime_t;
+#define CLOCK_FREQ INT64_C(1000000)
+#define CR_MAX_GAP (60 * CLOCK_FREQ)
+
+#define CR_MEAN_PTS_GAP (300000)
+
+#define CR_BUFFERING_RATE (48)
+
+#define CR_BUFFERING_TARGET (100000)
 
 #endif // TPCOMMONDEFINE_H

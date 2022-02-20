@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 ﻿#include "TPInputClock.h"
 #include <thread>
 TPInputClock::TPInputClock(const int nRate)
     :m_nRate(nRate)
+=======
+#include "TPInputClock.h"
+#include <thread>
+TPInputClock::TPInputClock(const int nRate)
+    :nRate(nRate)
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 {
 
 }
@@ -10,7 +17,11 @@ nTime_t TPInputClock::getWakeup()
 {
     nTime_t nWakeUp = INVALID;
     std::lock_guard<std::mutex> locker(m_lock);
+<<<<<<< HEAD
     if(m_bHasReference)
+=======
+    if(bHasReference)
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
     {
         //nWakeUp
     }
@@ -21,25 +32,38 @@ nTime_t TPInputClock::getWakeup()
 nTime_t TPInputClock::clockStreamToSystem(nTime_t nStream)
 {
     std::lock_guard<std::mutex> locker(m_lock);
+<<<<<<< HEAD
     if(!m_bHasReference)
+=======
+    if(!bHasReference)
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
     {
         return INVALID;
     }
 
     //将流时间转化为真正的系统时间
+<<<<<<< HEAD
     return (nStream - this->m_refPoint.nStream) * m_nRate /INPUT_RATE_DEFAULT + this->m_refPoint.nSystem;
+=======
+    return (nStream - this->refPoint.nStream) * nRate /INPUT_RATE_DEFAULT + this->refPoint.nSystem;
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 }
 
 nTime_t TPInputClock::clockSystemToStream(nTime_t nSystem)
 {
     //将系统时间转化为真正的流时间
     std::lock_guard<std::mutex> locker(m_lock);
+<<<<<<< HEAD
     return (nSystem - this->m_refPoint.nSystem) * INPUT_RATE_DEFAULT / this->m_nRate + this->m_refPoint.nStream;
+=======
+    return (nSystem - this->refPoint.nSystem) * INPUT_RATE_DEFAULT / this->nRate + this->refPoint.nStream;
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 }
 
 nTime_t TPInputClock::clockGetTsOffset()
 {
     std::lock_guard<std::mutex> locker(m_lock);
+<<<<<<< HEAD
     return this->m_nPtsDelay * (this->m_nRate - INPUT_RATE_DEFAULT) / INPUT_RATE_DEFAULT;
 }
 
@@ -47,10 +71,14 @@ STclockPoint TPInputClock::clockPointCreate( nTime_t nStream, nTime_t nSystem )
 {
     STclockPoint p = { nStream, nSystem };
     return p;
+=======
+    return this->nPtsDelay * (this->nRate - INPUT_RATE_DEFAULT) / INPUT_RATE_DEFAULT;
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 }
 
 void TPInputClock::inputClockUpdate(bool &bPbLate, bool bCanPaceControl, bool bBufferAllowed, nTime_t nStream, nTime_t nSystem)
 {
+<<<<<<< HEAD
     bool b_reset_reference = false;
 
     assert( nStream > INVALID && nSystem > INVALID );
@@ -124,4 +152,7 @@ void TPInputClock::inputClockUpdate(bool &bPbLate, bool bCanPaceControl, bool bB
         late.pi_value[late.nIndex] = i_late;
         late.nIndex = ( late.nIndex + 1 ) % INPUT_CLOCK_LATE_COUNT;
     }
+=======
+
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 }

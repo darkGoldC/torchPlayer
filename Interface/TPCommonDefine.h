@@ -26,22 +26,4 @@
 #define qTPWarningScope(no)     NANOSCOPE_LOG(no##1, TPNanolog::LogLevel::WARN, true) << "begin"; \
                             NANOSCOPE_LOG(no##2, TPNanolog::LogLevel::WARN, false) << "end"
 
-#define INVALID 0
-//时间
-#define CLOCK_FREQ 1000000L
-#define CR_MAX_GAP (60 * CLOCK_FREQ)
-#define CR_MEAN_PTS_GAP (300000)
-#define CR_BUFFERING_RATE (48)
-#define CR_BUFFERING_TARGET (100000)
-
-//math
-#ifndef __MAX
-#   define __MAX(a, b)   ( ((a) > (b)) ? (a) : (b) )
-#endif
-#ifndef __MIN
-#   define __MIN(a, b)   ( ((a) < (b)) ? (a) : (b) )
-#endif
-
-typedef long long nTime_t;
-
 #endif // TPCOMMONDEFINE_H

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿#ifndef TPINPUTCLOCK_H
+=======
+#ifndef TPINPUTCLOCK_H
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 #define TPINPUTCLOCK_H
 #include <iostream>
 #include <mutex>
@@ -19,6 +23,7 @@ typedef struct
     int     nResidue    = INVALID;//剩余数
     int     nCount      = INVALID;
     int     nDivider    = 10;//除法
+<<<<<<< HEAD
 
     void    reset()
     {
@@ -40,12 +45,18 @@ typedef struct
         nCount++;
     }
 
+=======
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 }STAverage;
 
 class TPInputClock
 {
 public:
+<<<<<<< HEAD
     TPInputClock(const int m_nRate);
+=======
+    TPInputClock(const int nRate);
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 
     nTime_t getWakeup();
     //将流时间转化为真正的系统时间
@@ -60,6 +71,7 @@ public:
     void    inputClockUpdate(bool &bPbLate, bool bCanPaceControl, bool bBufferAllowed,
                              nTime_t nStream, nTime_t nSystem);
 private:
+<<<<<<< HEAD
     STclockPoint clockPointCreate(nTime_t nStream, nTime_t nSystem);
 
 private:
@@ -72,6 +84,17 @@ private:
     //下一次更新时间
     nTime_t         m_nextDriftUpdate = INVALID;
     STAverage       m_drift;
+=======
+    std::mutex      m_lock;
+    //最后的输入时间
+    STclockPoint    lastPoint;
+    nTime_t         nTsMax = INVALID;
+    //总共的额外缓冲时间
+    nTime_t         nBuffering_duration = INVALID;
+    //下一次更新时间
+    nTime_t         m_nextDriftUpdate = INVALID;
+    STAverage       drift;
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 
     struct
     {
@@ -80,6 +103,7 @@ private:
     }late;
 
     //最新的参考时间
+<<<<<<< HEAD
     STclockPoint    m_refPoint;
     //是否重置
     bool            m_bHasReference = false;
@@ -94,6 +118,21 @@ private:
     nTime_t         m_nPtsDelay   = INVALID;
     nTime_t         m_nPauseDate  = INVALID;
 
+=======
+    STclockPoint    refPoint;
+    //是否重置
+    bool            bHasReference = false;
+
+    //外部的时间
+    nTime_t         nExternalClock      = INVALID;
+    bool            bHasExternalClock   = false;
+
+    //当前修改
+    bool            bPaused = false;
+    int             nRate;
+    nTime_t         nPtsDelay   = INVALID;
+    nTime_t         nPauseDate  = INVALID;
+>>>>>>> 5a3838374fa3d9a51831c8298ac84fff97c53dae
 };
 
 #endif // TPINPUTCLOCK_H

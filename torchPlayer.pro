@@ -13,6 +13,10 @@ SUBDIRS += \
         TPMain \
 
 
+
 CONFIG += c++17
 CONFIG += ordered
 
+
+
+CONFIG += ordered C++11

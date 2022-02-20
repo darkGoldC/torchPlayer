@@ -44,6 +44,8 @@ private:
     nTime_t     i_buffering_extra_initial;
     nTime_t     i_buffering_extra_stream;
     nTime_t     i_buffering_extra_system;
+private:
+
 };
 
 #endif // TPESOUT_H

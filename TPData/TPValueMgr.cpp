@@ -14,6 +14,7 @@ QObject *TPValueMgr::getObject()
 void TPValueMgr::setValue(const std::string &strName, const std::any &value)
 {
     std::lock_guard lock(m_mutex);
+    m_mapValue.insert(std::make_pair(strName, value));
 }
 
 std::any TPValueMgr::getValue(const std::string &strName)

@@ -2,6 +2,8 @@
 #include "ITPPluginsManager.h"
 #include<iostream>
 #include "TPEventNotify/TPSignalDefCommon.h"
+#include "ITPValueMgr.h"
+
 TPInputManager::TPInputManager()
 {
 
@@ -15,8 +17,11 @@ void TPInputManager::start(const std::string strUrl)
         ITPDemuxer *pDemuxer =  dynamic_cast<ITPDemuxer *>(pluginsManager->getInstance("TPFFmpegDemuxer"));
         if(pDemuxer)
         {
+
+            InterfacePtr<ITPValueMgr> tpValueMgr;
+            tpValueMgr->setValue("inputPlayUrl", strUrl);
             m_pDemuxer.reset(pDemuxer);
-            m_pDemuxer->open(strUrl);
+            dynamic_cast<ITPPlugin *>(m_pDemuxer.get())->load();
         }
     }
 

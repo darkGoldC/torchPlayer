@@ -9,7 +9,7 @@
 class  TPCORESHARED_EXPORT TPDemuxer : public ITPDemuxer
 {
 public:
-    bool    open(const std::string strUrl) override;
+    bool    init(const std::string strUrl) override;
     bool    control(const int nQuery) override;
 
 private:

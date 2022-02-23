@@ -1,16 +1,17 @@
-#ifndef TPFFMPEGDECODE_H
+﻿#ifndef TPFFMPEGDECODE_H
 #define TPFFMPEGDECODE_H
-#include "TPDemuxer.h"
+#include "TPDecoder.h"
 #include "ITPPlugin.h"
 
-class TPFFmpegDecode : public ITPPlugin, public TPDemuxer
+class TPFFmpegDecode : public ITPPlugin, public TPDecoder
 {
 public:
     REGISTER(TPFFmpegDecode)
 
     TPFFmpegDecode();
-    bool    init() override;
-    bool    demux() override;
+    bool            load() override;
+    bool            unload() override;
+    int             decode(Block_t *p_block) override;
 };
 
 #endif // TPFFMPEGDECODE_H

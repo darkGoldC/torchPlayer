@@ -1,4 +1,4 @@
-#ifndef ITPPlugin_H
+﻿#ifndef ITPPlugin_H
 #define ITPPlugin_H
 #include <iostream>
 #include "TPInterfacePtr.h"
@@ -45,25 +45,11 @@ public:
 };
 
 
-#define LOAD_PLUGIN(ClassName)   \
-    bool            load() override \
-    {\
-        return true;\
-    }
-
-#define UNLOAD_PLUGIN(ClassName)\
-    bool    unload() override\
-    {\
-        return true;\
-    }
-
 #define REGISTER(ClassName) \
     static ITPPlugin* instance() \
     { \
         return new ClassName; \
     } \
-    LOAD_PLUGIN(ClassName)\
-    UNLOAD_PLUGIN(ClassName)
 
 
 class ITPPlugin

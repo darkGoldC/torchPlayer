@@ -2,14 +2,12 @@
 #include "TPDemuxer.h"
 #include <iostream>
 
-
-bool TPDemuxer::open(const std::string strUrl)
+bool TPDemuxer::init(const std::string strUrl)
 {
     bool bRet = false;
     m_strUrl = strUrl;
 
-    init();
-    return bRet;
+    return true;
 }
 
 bool TPDemuxer::control(const int nQuery)

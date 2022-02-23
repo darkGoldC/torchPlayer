@@ -1,16 +1,16 @@
-#ifndef GLVIDEOOUTPUT_H
+﻿#ifndef GLVIDEOOUTPUT_H
 #define GLVIDEOOUTPUT_H
-#include "TPDemuxer.h"
+#include "TPVideoOutput.h"
 #include "ITPPlugin.h"
 
-class GlVideoOutput : public ITPPlugin, public TPDemuxer
+class GlVideoOutput : public ITPPlugin, public TPVideoOutput
 {
 public:
     REGISTER(GlVideoOutput)
     GlVideoOutput();
 
-    bool    init() override;
-    bool    demux() override;
+    bool            load() override;
+    bool            unload() override;
 };
 
 #endif // GLVIDEOOUTPUT_H

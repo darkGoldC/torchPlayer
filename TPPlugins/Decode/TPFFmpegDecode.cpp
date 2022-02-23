@@ -1,16 +1,21 @@
-#include "TPFFmpegDecode.h"
+﻿#include "TPFFmpegDecode.h"
 
 TPFFmpegDecode::TPFFmpegDecode()
 {
 
 }
 
-bool TPFFmpegDecode::init()
+bool TPFFmpegDecode::load()
 {
     return true;
 }
 
-bool TPFFmpegDecode::demux()
+bool TPFFmpegDecode::unload()
 {
     return true;
+}
+
+int TPFFmpegDecode::decode(Block_t *p_block)
+{
+    return 0;
 }

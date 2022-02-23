@@ -1,4 +1,4 @@
-#include "BlockDataQueue.h"
+﻿#include "BlockDataQueue.h"
 #include <chrono>
 #include <ctime>
 using namespace std::chrono;
@@ -29,6 +29,15 @@ bool BlockDataQueue::queueWait(const long long nTime)
     bRet = m_waitCond.wait_until(lck, tp_mseconds) == std::cv_status::timeout;
 
     return bRet;
+}
+
+void BlockDataQueue::flushClearQueue()
+{
+    std::unique_lock<std::mutex> lck (m_mutex);
+
+    std::queue<std::shared_ptr<Block_t>> tempQueue;
+    m_blockQueue.swap(tempQueue);
+    m_waitCond.notify_one();
 }
 
 void BlockDataQueue::pushBlock(const std::shared_ptr<Block_t> block)

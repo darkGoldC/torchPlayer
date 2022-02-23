@@ -1,16 +1,18 @@
-#include "GlVideoOutput.h"
+﻿#include "GlVideoOutput.h"
 
 GlVideoOutput::GlVideoOutput()
 {
 
 }
 
-bool GlVideoOutput::init()
+bool GlVideoOutput::load()
 {
     return true;
 }
 
-bool GlVideoOutput::demux()
+bool GlVideoOutput::unload()
 {
     return true;
 }
+
+

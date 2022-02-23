@@ -1,8 +1,9 @@
-#ifndef ITPVIDEOOUTPUT_H
+﻿#ifndef ITPVIDEOOUTPUT_H
 #define ITPVIDEOOUTPUT_H
 #include "ITPVideoOutput.h"
+#include "TP_CoreDefine.h"
 
-class TPVideoOutput
+class TPCORESHARED_EXPORT TPVideoOutput
 {
 public:
     TPVideoOutput();

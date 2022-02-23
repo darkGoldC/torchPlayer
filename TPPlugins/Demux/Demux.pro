@@ -1,9 +1,9 @@
 TEMPLATE = lib
 TARGET = TPDemux
-
+CONFIG += c++17
 INCLUDEPATH += $$PWD/../../TPCoreFramework \
-                $$PWD/../../Interface
-
+                $$PWD/../../Interface \
+                $$PWD/../../ThirdInclude/ffmpeg
 HEADERS += \
     TPFFmpegDemuxer.h
 
@@ -34,6 +34,8 @@ unix:!macx:{
     }
     PlatformFolder = Linux
 }
+
+LIBS += -L$$PWD/../../bin/$$PlatformFolder/ThirdLib/ffmpeg/Debug -lavformat -lavutil -lavcodec -lswresample
 
 LIBS += -L$$PWD/../../bin/$$PlatformFolder/ -lTPBase -lTPFramework
 DESTDIR = $$PWD/../../bin/$$PlatformFolder

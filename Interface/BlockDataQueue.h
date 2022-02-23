@@ -1,4 +1,4 @@
-#ifndef BLOCKDATAQUEUE_H
+﻿#ifndef BLOCKDATAQUEUE_H
 #define BLOCKDATAQUEUE_H
 #include "BlockData.h"
 #include <mutex>
@@ -6,8 +6,9 @@
 #include <queue>
 #include <vector>
 #include <memory>
+#include "TP_BaseDefine.h"
 
-class BlockDataQueue
+class TPBASESHARED_EXPORT BlockDataQueue
 {
 public:
     BlockDataQueue();
@@ -17,6 +18,8 @@ public:
     void    queueWait();
     //队列超时等待
     bool    queueWait(const long long nTime);
+    //清空队列
+    void    flushClearQueue();
 
     //往队列里压入数据
     void    pushBlock(const std::shared_ptr<Block_t> block);

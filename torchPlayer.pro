@@ -20,3 +20,6 @@ CONFIG += ordered
 
 
 CONFIG += ordered C++11
+
+HEADERS += \
+    Interface/TPUIData.h

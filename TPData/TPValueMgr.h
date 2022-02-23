@@ -13,8 +13,8 @@ public:
     TPValueMgr();
 
     QObject *getObject() override;
-    void    setValue(const std::string &strName, const std::any &value);
-    std::any getValue(const std::string &strName);
+    void    setValue(const std::string &strName, const std::any &value) override;
+    std::any getValue(const std::string &strName) override;
 private:
     std::map<std::string, std::any> m_mapValue;
     std::mutex  m_mutex;

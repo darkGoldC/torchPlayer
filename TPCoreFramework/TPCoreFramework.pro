@@ -1,5 +1,5 @@
 QT       += widgets xml gui network multimedia multimediawidgets concurrent sql opengl openglextensions
-
+CONFIG += c++17
 TEMPLATE = lib
 TARGET = TPFramework
 
